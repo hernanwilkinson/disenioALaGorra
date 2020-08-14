@@ -1,5 +1,12 @@
 package time1;
 
+// Esta implementación muestra como NO hay que implementar
+// una clase. O sea, usando la idea de "clase anémica" dónde
+// solo tiene getters y setters y se rompe el encapsulamiento
+// todo el tiempo.
+// Este tipo de clases no te enseñan cómo usarla y no soportan
+// el paso del tiempo, ni en el modelo ni en el proceso de 
+// aprendizaje que realizamos mientras desarrollamos
 public class Time {
 
 	private int hour;
@@ -31,12 +38,4 @@ public class Time {
 	public void setSecond(int second) {
 		this.second = second;
 	}
-	int differenceInHours(Time timeToCompare) {
-		return normailizedHour()-timeToCompare.normailizedHour();
-	}
-	private int normailizedHour() {
-		return timeZone.normalized(hour);
-	}
-	
-	
 }

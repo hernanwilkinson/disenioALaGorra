@@ -1,5 +1,6 @@
 package time1;
 
+// Al igual que Time, sigue la indea de "clase anémica"
 public class TimeZone {
 
 	private int offset;

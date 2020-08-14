@@ -1,5 +1,10 @@
 package time2;
 
+// Esta implementación sigue la heurística de clase
+// completa.
+// No tiene getters innecesarios ni setters (tema a discutir
+// más adelante)
+// Apenas se instancia, el objeto está completo
 public class Time {
 
 	private int hour;
