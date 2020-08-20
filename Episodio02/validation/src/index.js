@@ -599,12 +599,12 @@ Interval.INVALID_INTERVAL = "From must be less or equal to to";
 class ErrorMessage extends React.Component {
     constructor(props) {
         super(props);
-        this.formAssistant = props.formAssistant;
+        this.formCompletionAssistant = props.formCompletionAssistant;
     }
 
     errorDescriptions(){
         let counter = 0;
-        return this.formAssistant.failedAssertionsDescriptions().map(description =>
+        return this.formCompletionAssistant.failedAssertionsDescriptions().map(description =>
             <li key={counter++}>{description}</li>);
     }
 
@@ -621,7 +621,7 @@ class ErrorMessage extends React.Component {
     }
 
     hasFailedAssertionsToShow() {
-        return this.formAssistant.hasFailedAssertions();
+        return this.formCompletionAssistant.hasFailedAssertions();
     }
 }
 
@@ -632,7 +632,7 @@ class FormField extends React.Component{
         this.state.labelText = props.labelText;
         this.state.inputName = props.inputName;
         this.state.inputPlaceHolder = props.inputPlaceHolder;
-        this.state.formAssistant = props.formAssistant;
+        this.state.formCompletionAssistant = props.formCompletionAssistant;
         this.state.doNotShowErrorMessage = props.doNotShowErrorMessage;
     }
     render(){
@@ -660,7 +660,7 @@ class FormField extends React.Component{
         if(this.state.doNotShowErrorMessage)
             return null;
         else
-            return <ErrorMessage formAssistant={this.state.formAssistant}/>;
+            return <ErrorMessage formCompletionAssistant={this.state.formCompletionAssistant}/>;
     }
 
     label() {
@@ -671,21 +671,21 @@ class FormField extends React.Component{
     }
 
     setModel(state, e) {
-        state.formAssistant.setModel(e.target.value);
+        state.formCompletionAssistant.setModel(e.target.value);
     }
 
     getModel() {
-        return this.state.formAssistant.getModel();
+        return this.state.formCompletionAssistant.getModel();
     }
 }
 
 class InnerModelFormField extends FormField {
     setModel(state, e) {
-        state.formAssistant.setInnerModel(e.target.value);
+        state.formCompletionAssistant.setInnerModel(e.target.value);
     }
 
     getModel() {
-        return this.state.formAssistant.getInnerModel();
+        return this.state.formCompletionAssistant.getInnerModel();
     }
 }
 
@@ -713,7 +713,7 @@ class TimeView extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = props.formAssistant;
+        this.state = props.formCompletionAssistant;
     }
 
     render(){
@@ -722,20 +722,20 @@ class TimeView extends React.Component {
                 <div className="three fields" style={{ width: '250px' }}>
                     <InnerModelFormField inputName={"hour"}
                                          inputPlaceHolder={"00"}
-                                         formAssistant={this.state.hour}
+                                         formCompletionAssistant={this.state.hour}
                                          doNotShowErrorMessage={true}/>
                     <label>:</label>
                     <InnerModelFormField inputName={"minute"}
                                          inputPlaceHolder={"00"}
-                                         formAssistant={this.state.minute}
+                                         formCompletionAssistant={this.state.minute}
                                          doNotShowErrorMessage={true}/>
                     <label>:</label>
                     <InnerModelFormField inputName={"second"}
                                          inputPlaceHolder={"00"}
-                                         formAssistant={this.state.second}
+                                         formCompletionAssistant={this.state.second}
                                          doNotShowErrorMessage={true}/>
                 </div>
-                <ErrorMessage formAssistant={this.state} />
+                <ErrorMessage formCompletionAssistant={this.state} />
             </div>
         );
     }
@@ -745,7 +745,7 @@ class CustomerView extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = props.formAssistant;
+        this.state = props.formCompletionAssistant;
     }
 
     static createFormAssistant(getterFromContainerModel, assertionsId=[]){
@@ -805,24 +805,24 @@ class CustomerView extends React.Component {
             <div>
                 <FormField labelText={"First Name"} inputName={"first-name"}
                            inputPlaceHolder={"First Name"}
-                           formAssistant={this.state.firstNameAssistant} />
+                           formCompletionAssistant={this.state.firstNameAssistant} />
                 <FormField labelText={"Last Name"} inputName={"last-name"}
                            inputPlaceHolder={"Last Name"}
-                           formAssistant={this.state.lastNameAssistant} />
+                           formCompletionAssistant={this.state.lastNameAssistant} />
                 <InnerModelFormField labelText={"Years"} inputName={"years"}
                            inputPlaceHolder={"Years"}
-                                     formAssistant={this.state.yearsAssistant} />
+                                     formCompletionAssistant={this.state.yearsAssistant} />
                 <div className="two fields">
                     <div className="field">
                         <label>WorkingFrom</label>
-                        <TimeView formAssistant={this.state.fromWorkingHoursAssistant}/>
+                        <TimeView formCompletionAssistant={this.state.fromWorkingHoursAssistant}/>
                     </div>
                     <div className="field">
                         <label>To</label>
-                        <TimeView formAssistant={this.state.toWorkingHoursAssistant}/>
+                        <TimeView formCompletionAssistant={this.state.toWorkingHoursAssistant}/>
                     </div>
                 </div>
-                <ErrorMessage formAssistant={this.state} />
+                <ErrorMessage formCompletionAssistant={this.state} />
             </div>
         );
     }
@@ -855,7 +855,7 @@ class App extends React.Component {
             <div className="ui container" style={{ marginTop: '10px', width: '500px' }}>
                 <div className="ui segment">
                     <form className="ui form">
-                       <CustomerView formAssistant={this.state.fromCustomerAssistant}/>
+                       <CustomerView formCompletionAssistant={this.state.fromCustomerAssistant}/>
                     </form>
                     <button className="ui button" onClick={this.clicked}>Test</button>
                 </div>
@@ -863,7 +863,7 @@ class App extends React.Component {
             <div className="ui container" style={{ marginTop: '10px', width: '500px' }}>
                 <div className="ui segment">
                     <form className="ui form">
-                        <CustomerView formAssistant={this.state.toCustomerAssistant}/>
+                        <CustomerView formCompletionAssistant={this.state.toCustomerAssistant}/>
                     </form>
                 </div>
             </div>
