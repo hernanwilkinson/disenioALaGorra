@@ -21,10 +21,13 @@ export class SalesBookServer extends ServerSystem {
 
     register(request, response) {
         const invoiceAsJson = request.body;
-        const invoice = Invoice.fromJson(invoiceAsJson);
 
         this.executeSystemAction(
-            ()=>this.salesBook.register(invoice),
+            ()=>{
+                const invoice = Invoice.fromJson(invoiceAsJson);
+
+                this.salesBook.register(invoice)
+            },
             response);
     }
 }

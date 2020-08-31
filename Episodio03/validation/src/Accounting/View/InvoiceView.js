@@ -30,6 +30,8 @@ export class InvoiceView extends React.Component {
                 addresseeAssistant,
                 totalAssistant],
             (issueDate, number, addressee, total) =>
+                // Para que la validación se haga en el server, reemplazar
+                // Invoice.at por new Invoice. Esto solo es válido si se está usando el server
                 Invoice.at(issueDate,number,addressee,total),
             getterFromContainerModel,
             assertionsId);

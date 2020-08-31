@@ -1,5 +1,4 @@
 import {ServerSystem} from "../../System/ServerSystem";
-import {CustomersAgenda} from "./CustomersAgenda";
 import {Customer} from "../Customer";
 
 export class CustomersAgendaServer extends ServerSystem {
@@ -25,20 +24,24 @@ export class CustomersAgendaServer extends ServerSystem {
 
     add(request, response) {
         const customerAsJson = request.body;
-        const customer = Customer.fromJson(customerAsJson);
-
         this.executeSystemAction(
-            ()=>this.customersAgenda.add(customer),
+            ()=> {
+                const customerToAdd = Customer.fromJson(customerAsJson);
+                return this.customersAgenda.add(customerToAdd);
+            },
             response);
     }
 
     update (request, response) {
         const customersAsJson = request.body;
-        const customerToUpdate = Customer.fromJson(customersAsJson[0]);
-        const updatedCustomer = Customer.fromJson(customersAsJson[1]);
 
         this.executeSystemAction(
-            ()=>this.customersAgenda.update(customerToUpdate,updatedCustomer),
+            ()=> {
+                const customerToUpdate = Customer.fromJson(customersAsJson[0]);
+                const updatedCustomer = Customer.fromJson(customersAsJson[1]);
+
+                this.customersAgenda.update(customerToUpdate,updatedCustomer)
+            },
             response);
     }
 

@@ -32,6 +32,8 @@ export class CustomerView extends React.Component {
                 fromWorkingHoursAssistant,
                 toWorkingHoursAssistant],
             (firstName, lastName, dni, fromWorkingHours, toWorkingHours) =>
+                // Para que la validación se haga en el server, reemplazar
+                // Customer.name por new Customer. Esto solo es válido si se está usando el server
                 Customer.named(firstName, lastName, dni, fromWorkingHours, toWorkingHours),
             getterFromContainerModel,
             assertionsId);
