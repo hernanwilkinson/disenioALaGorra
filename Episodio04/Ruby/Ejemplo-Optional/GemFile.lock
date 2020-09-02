@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.10.1)
+    rumonade (0.4.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  minitest
+  rumonade
+
+BUNDLED WITH
+   2.1.4
