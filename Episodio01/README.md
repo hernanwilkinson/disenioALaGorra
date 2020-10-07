@@ -1,4 +1,4 @@
-# Episodio 01
+# Episodio 01 - Qué es Diseñar y Cómo hacer que un diseño nos Enseñe
 En este episodio hablamos sobre qué es diseñar, cuál es el diseño que nosotros armamos
 y vimos la importancia de tener objetos completos para que nuestros diseños nos enseñen
 y podamos controlar el paso del tiempo

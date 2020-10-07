@@ -1,4 +1,4 @@
-# Episodio 07
+# Episodio 07 - Todo lo que siempre quisiste saber sobre los Tests
 En este episodio analizamos algunas cuestiones relacionadas a TDD, tests, etc.
 Los temas que tocamos fueron:
 - Tipos de Tests

@@ -1,4 +1,4 @@
-# Episodio 02
+# Episodio 02 - Objetos Válidos
 En este episodio hablamos sobre la importancia de tener objetos válidos y cómo podemos unir las validaciones
 con la UI
 
