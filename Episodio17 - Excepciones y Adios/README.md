@@ -5,4 +5,6 @@ En este episodio despedida hablamos sobre Excepciones, de dónde vienen, cómo u
 También vimos unas estadísticas del webinar e hicimos un cierre del webinar con video resumen y todo!
 
 Pueden acceder al video acá: https://academia.10pines.com/topics/10/videos/57
+
+Y acá hay un video resumen/despedida de todo el webinar: https://youtu.be/Q4pss8mPSLk
 ----
