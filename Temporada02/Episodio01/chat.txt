@@ -1,0 +1,289 @@
+00:14:00	Máximo Prieto:	Hola por mi parte. Un placer estar con ustedes
+00:15:11	Máximo Prieto:	Hernán es un poco ególatra, pero lo queremos igual
+00:15:17	Lucas Raposeiras:	Buenas tardes!
+00:16:33	Lucía Krayacich:	Buenas, yo hoy no tengo ni micrófono
+00:16:41	Gonzalo Vivas:	buenas tardes a todos!
+00:17:05	David Gonzalez:	¿como se levanta la mano?
+00:17:17	Jaime Sossa:	reacciones
+00:17:25	Diego Colombo:	en reacciones tenes el boton raise hand
+00:17:33	Andrea Storniolo:	Buenas tardes........
+00:17:37	Patricio Gorin:	23:07
+00:18:37	Hernan Wilkinson:	buenas tardes, escribo en este chat para saludarlos y también para corroborar con qué nombre aparezco jaja
+00:18:58	Hernan Wilkinson:	veo que soy otra instancia de hernán
+00:22:08	Diego Colombo:	que pasa si se la gana Hernan Wilkinson?
+00:22:32	Federico Iachetti:	o si ganan 4 Hernán Wilkinson .... ahí te quiero ver
+00:24:07	Nicolas Nobile:	"quienes no conocen la historia estan condenados a repetirla" aplicara a sistemas? :P
+00:24:36	Gonzalo Vivas:	quedó levantada :)
+00:26:34	Máximo Prieto:	Aguante Ward Cunningham
+00:28:38	Máximo Prieto:	Muy declarativo
+00:29:14	Daniel Maldonado:	Primera vez que veo eso de ||=
+00:29:33	Máximo Prieto:	Qué afortunado sos
+00:29:52	Cristián Pérez:	jaja
+00:31:54	Diego Colombo:	typo
+00:31:57	Diego Colombo:	asocaited
+00:32:00	Gonzalo Vivas:	hay un tipo en associated
+00:32:03	Gonzalo Vivas:	*typo
+00:32:04	Ezequiel Birman:	hay un «associated»
+00:32:10	Ezequiel Birman:	assocaited
+00:33:36	Hernan Wilkinson:	dependent dependAnt
+00:34:22	Guillermo Perez:	tenes que ser actor
+00:34:26	Leonel Axel Stambul:	para ver q estemos atentos
+00:34:43	Federico Iachetti:	Oscar .... directamente
+00:35:25	Pablo Nussembaum:	me paso en visual basic 3 :D
+00:35:42	Daniel Maldonado:	2 x 1
+00:36:02	Máximo Prieto:	No
+00:36:11	Ezequiel Birman:	Visual Basic tenía un muy buen autocomplete
+00:36:30	Ezequiel Birman:	o eso recuerdo
+00:37:29	Diego Colombo:	muchas veces
+00:37:31	Nicolas Nobile:	ojo bionico 
+00:37:46	Lorenzo Lamas:	Quien no es la pregunta
+00:39:45	Máximo Prieto:	Qué buen nombre de variable, ¿no? temp1
+00:39:47	Diego Colombo:	ambito local
+00:40:06	Matias Vega:	Era lo de que nos pasó
+00:40:08	Matias Vega:	la situación
+00:40:14	Matias Vega:	Disculpas
+00:40:21	Cristián Pérez:	En el global porque no usa la keyword var o ahora let/const
+00:40:56	Máximo Prieto:	Pregunta fácil (closure). La respuesta, no tanto
+00:40:56	Daniel Maldonado:	No veo ese JS desde 2013
+00:41:58	Máximo Prieto:	Y se propagan las referencias de los objetos adonde fue creado el closure
+00:43:26	Guillermo Perez:	claro, una funcion anonima en si no tiene por que recordar variables del lugar donde fue creado, segun entiendo. En cambio un closure se espera que si. Como que el closure tiene visibilidad. No se si es parte de su definicion.
+00:44:16	Máximo Prieto:	Se conoce como la propagación de self
+00:44:56	Máximo Prieto:	Para los que no hablan inglés: self == this
+00:45:13	Hernan Wilkinson:	let , var , const... algo bueno tiene Javascript
+00:46:14	Máximo Prieto:	Muchas cosas; no justamente esas
+00:47:20	Daniel Maldonado:	Buena reflexion
+00:47:22	Pablo Nussembaum:	en visual  basic se usaba "option explicit". que viejo me siento
+00:47:34	Diego Colombo:	pablo no estas solo
+00:47:39	Hernan Wilkinson:	on error resume next
+00:48:35	Máximo Prieto:	Php es una mentira
+00:48:41	Daniel Maldonado:	Se pone la gorra
+00:48:52	Cristián Pérez:	con “use”
+00:49:08	Pablo Andrés:	y c#..?
+00:49:35	Cristián Pérez:	Javascript no tiene bueno ni el nombre, porque hasta el nombre lo hace ver como el hermano tonto de Java 😅
+00:49:55	Máximo Prieto:	C# no está mal para ser un lenguaje antiguo
+00:49:59	Daniel Maldonado:	Javascript es panita
+00:50:06	Cristián Pérez:	Estoy con Máximo
+00:50:18	Juan Vuletich:	“antiguo”?
+00:50:27	Ezequiel Birman:	eso es lo que se llama hoisting?
+00:50:44	Ezequiel Balsamo:	Tengo entendido que sí
+00:50:57	Guillermo Perez:	en javascript entiendo que si, hoisting
+00:50:58	Juan Vuletich:	Máximo, por qué decís que c# es antiguo?
+00:51:00	Nicolas Hernández Amor:	Si, eso es hoisting
+00:51:06	Máximo Prieto:	Sí, antiguo. ¿Que agrega respecto de Simula?
+00:51:16	Hernan Wilkinson:	para eso están los tests
+00:51:17	Daniel Maldonado:	No estoy seguro, para mi ahi es no es hoisting, sino que la closure puede acceder al contexto donde se inicializo, para el momento de llamar al closure, temp1 ya esta inicializada
+00:51:26	Diego Colombo:	se pico el chat!
+00:51:33	Juan Vuletich:	Ok. Creí que decías “viejo”. Entonces creo que la palabra justa es “anticuado”.
+00:51:59	Ezequiel Birman:	Daniel me convenció
+00:52:07	Hernan Wilkinson:	En Javascript sería hoisting si estuviésemos usando "var", pero en este caso simplemente estamos usando siempre la variable global :thinking:
+00:52:19	Guillermo Perez:	Cada vez que Hernan escribie en el chat
+00:52:22	Guillermo Perez:	https://i.blogs.es/9bd724/spider-memeportada/450_1000.jpg
+00:52:39	Máximo Prieto:	De acuerdo con @cristian. Javascript no debería llamarse java
+00:53:37	Máximo Prieto:	Sí, Juan. Fue mi intención
+00:54:43	Nicolas Nobile:	cada lenguaje hace publicidad como puede jeje
+00:55:02	Diego Colombo:	12, 1
+00:55:16	Máximo Prieto:	¿Python? Pensé que estábamos hablando de Objetos
+00:55:30	Cristián Pérez:	Ehhhh, alta implementación de objetos tiene Python!
+00:55:48	Máximo Prieto:	Sepan comprender mis ironías no pragmáticas
+00:56:11	Cristián Pérez:	te faltan emojis Máximo xD
+00:56:14	Hernan Wilkinson:	críptico. parece GoLang
+00:56:50	Máximo Prieto:	Cristian: ¿Te referís a funciones como map, reduce y filter? Nada lejos de objetos
+00:57:41	Máximo Prieto:	No pongo emojis por soy antiguo. 😂
+00:57:49	Hernan Wilkinson:	esto de modificar el outer context tiene que ver con las side-effects free functions no?
+00:58:26	Hernan Wilkinson:	ah no sabía que había salido del anonimato! hola, soy pablo
+00:58:31	Leandro Bravo:	Flashbacks de punteros
+00:58:37	Juan Vuletich:	Estaba por decir “php lo hace bien!”. Qué desastre!
+00:58:41	Nicolas Nobile:	uff punteros, los vuelvo a sufrir con go ahora :c
+00:58:42	Daniel Maldonado:	Que recuerdos ese &
+00:58:43	Ezequiel Balsamo:	Que oscuro se está poniendo esto jajaja
+00:59:11	Pablo Nussembaum:	yoringuer var definitions
+00:59:35	Lorenzo Lamas:	La foto de perfil te delato pablito
+00:59:45	Máximo Prieto:	El & también está en ruby y en swift
+00:59:51	Hernan Wilkinson:	el VAR te puede dejar afuera de un mundial
+00:59:52	Daniel Maldonado:	Ahora si, hoisting
+01:00:36	Máximo Prieto:	Mi & preferido es el de DBase
+01:00:42	Cristián Pérez:	Máximo, me agarraste con esa jaja, dejando de lado esas excepciones el resto esta bueno me parece, pero si, detesto la mezcla de objetos y estructurada que hay aún en Python
+01:00:52	Guillermo Perez:	el hosting entiendo que se da porque javascript hace una primer interpretacion de codigo para definir variables. Y una segunda interpretacion de codigo para asignar valores. Algo asi.
+01:01:31	Máximo Prieto:	Hay tantas excepciones, Cristian…
+01:02:12	Cristián Pérez:	es incoherente que puedas hacer
+01:02:25	Cristián Pérez:	a
+01:02:30	Máximo Prieto:	¿Quién es Alan Jay?
+01:02:43	Máximo Prieto:	*Alana kay
+01:03:04	Hernan Wilkinson:	debe ser un trapero de moda
+01:03:08	Máximo Prieto:	*ufa: Alan Kay
+01:03:34	Cristián Pérez:	es incoherente que puedas hacer len(a), y a.__len__() y sin embargo no puedas hacer a.__map__(f) pero si map(f, a) 🤨
+01:04:15	Daniel Maldonado:	“el hosting entiendo que se da porque javascript hace una primer interpretacion de codigo para definir variables. Y una segunda interpretacion de codigo para asignar valores. Algo asi.”
+01:04:26	Daniel Maldonado:	Totalmente, y eso lo hace con los VARS y FUNCTIONS
+01:04:42	Nicolas Nobile:	con esos cons no quiero saber nada de definicion automatica jajaja
+01:04:42	Máximo Prieto:	Trapero; buena defiinición para estos tipos que se dedican a decir cualquier cosa. 😉 Aguante Alan
+01:04:53	Hernan Wilkinson:	pero escribimos menos.. está bien sabido que es lo importante al programar..
+01:04:58	Hernan Wilkinson:	Hola... amantes de VIM!
+01:05:02	Leandro Bravo:	la solución es diseñar desde la variable
+01:06:33	Hernan Wilkinson:	pero esos microsegundos de usar la IDE quién te los devuelve?
+01:06:44	Nicolas Nobile:	pequeña charla je
+01:07:38	Hernan Wilkinson:	no le echen la culpa a los lenguajes. la culpa es de los malos programadores
+01:07:47	Hernan Wilkinson:	tal cual
+01:07:48	Juan Vuletich:	Smalltalk es un lugar donde hay cosas.
+01:08:03	Juan Cruz Ajuria:	un hernana dandole la razon a otro hernan es muy raro
+01:08:35	Hernan Wilkinson:	si ignoramos las clausuras y la metaprogramacion todos los lenguajes son buenos
+01:09:12	Ezequiel Birman:	20
+01:09:14	Emilio Echeverria:	10
+01:09:14	Diego Colombo:	10
+01:09:14	David Gonzalez:	20
+01:09:20	David Gonzalez:	10
+01:09:21	Juan Carlos Humpiri:	10
+01:09:22	Hernan Wilkinson:	jaja
+01:09:27	Ezequiel Birman:	jajaja
+01:09:47	Máximo Prieto:	No sé quién es Hernán Wilkinson, pero tenéis razón. El problema no son los lenguajes si ¡no los programadores
+01:11:20	Daniel Maldonado:	Muchos una-variable
+01:13:08	Máximo Prieto:	Siempre se violar el encapsulamiento
+01:13:21	Máximo Prieto:	*puede
+01:14:51	Máximo Prieto:	Lisp es muy viejo, ¿o no?
+01:15:07	Mauricio Colacchio:	Capaz se puede mostrar mejor con perl que tiene el mismo problema.
+01:15:23	Mauricio Colacchio:	Y es más sencillo de leer
+01:15:33	Máximo Prieto:	¿Qué es Perl?
+01:16:00	Cristián Pérez:	Siempre quise conocer a alguien que programe en Perl
+01:16:24	Máximo Prieto:	Yo no soy el caso
+01:17:01	Cristián Pérez:	La comunidad perl trabaja desde las sombras jaja
+01:19:01	Facundo Javier Gelatti:	Ligadura
+01:19:07	Diego Colombo:	ligadura
+01:19:12	Daniel Maldonado:	enlace
+01:19:14	Mauricio Colacchio:	Ligadura, en los textos de conceptos aparece así
+01:19:23	Cristián Pérez:	Enlazar
+01:19:24	felipe marelli:	enganchar, juntar
+01:19:26	Cristián Pérez:	yo al menos la uso así
+01:19:29	felipe marelli:	atar
+01:19:29	Cristián Pérez:	conectar 2 cosas
+01:20:38	Leonel Axel Stambul:	ligadura suena campestre
+01:21:42	David Gonzalez:	Levadura
+01:21:50	Daniel Maldonado:	Herradura
+01:21:51	Hernan Wilkinson:	https://es.wikipedia.org/wiki/El_idioma_anal%C3%ADtico_de_John_Wilkins casi Wilkinson
+01:22:07	Facundo Javier Gelatti:	Ejemplo del uso de la palabra "ligadura" como "binding": https://es.wikipedia.org/wiki/Variable_libre_y_variable_ligada
+01:22:13	Hernan Wilkinson:	a vos que te gusta Borges, Maximo
+01:22:18	Máximo Prieto:	Sí David. A mí también me gusta la cerveza
+01:22:50	Máximo Prieto:	Y el pan
+01:28:06	Ezequiel Birman:	Hay que dejar de usar this por dos años
+01:28:16	Diego Colombo:	Buenisimo Ezequiel!!
+01:28:32	Nicolas Nobile:	jajajajaj me hiciste el dia ezequiel
+01:28:56	Daniel Maldonado:	Eso pasa cuando pasamos de un lenguaje a al otro y creemos que los 2 lenguajes se van a comportar igual
+01:30:21	Daniel Maldonado:	Si ves functions anidadas y uso de this, cuidado )?
+01:31:32	Máximo Prieto:	Es medio trucco wilü como programador, ¿no? 😉
+01:31:47	Máximo Prieto:	*wilk
+01:32:07	Hernan Wilkinson:	además no sos resistente a typos digamos, no?
+01:32:16	Daniel Maldonado:	No paaaasa nada
+01:32:19	Hernan Wilkinson:	primitive obsession code smell
+01:32:31	Hernan Wilkinson:	qué pasa si escribís displaysiez ponele
+01:32:55	Máximo Prieto:	Che todos los wilü truchas, cambien su nombre
+01:32:57	Daniel Maldonado:	No te va a andar
+01:33:58	Máximo Prieto:	No está mal querer hacerse pasarse por wilk, pero para qué
+01:34:34	Hernan Wilkinson:	todos los wordles usan strings
+01:34:49	Hernan Wilkinson:	perdón, esto es Diseño a la Gorra o peguenle a JS? JAJAJA!
+01:35:14	Juan Carlos Humpiri:	pero no todos tiene el atributo color
+01:35:20	Guillermo Perez:	el tema es diseño de lenguajes, ponele.
+01:35:38	Luis Orjuela:	Typescript fpr the win!
+01:35:57	Máximo Prieto:	Por favor, pongan sus nombres reales, salvo que les de pudor
+01:36:06	Gonzalo Vivas:	php la sacó barata, raro
+01:36:17	Daniel Maldonado:	Playground
+01:36:24	Ezequiel Birman:	y además color se puede escribir colour
+01:36:48	Guillermo Perez:	hay 12 Hernan Wilkinson porque entraron con un link que pasa el nombre por parametro. Posta. Zoom es asi.
+01:39:15	Leandro Bravo:	en Python dicts, tuples, lists, dataclasses
+01:40:53	Daniel Maldonado:	Se te escapo la tortuga
+01:41:57	Guillermo Perez:	Entiendo que el mismo feature de objetos anonimos de js estaria presente en ML, como un Record
+01:42:11	Guillermo Perez:	val richardIII =
+      {born = 1452, crowned = 1483, died = 1485, name = "Richard III",
+       quote = "Plots have I laid..."}
+01:42:15	Hernan Wilkinson:	optimización prematura
+01:43:10	Ezequiel Birman:	@Guillermo pero un literal de objetos, sí puede tener métodos
+01:43:18	Bruno M:	alguno tiene el link de ese paper/artículo "Don't use arrays" ?
+01:43:59	Hernan Wilkinson:	mutation testing
+01:44:17	Guillermo Perez:	@Ezequiel, ok, pero como data structure, para holdear valores, no seria un invento novedoso digo
+01:44:25	Guillermo Perez:	ni en la sintaxis
+01:45:07	Julián Aicardo:	StackOverflow
+01:45:45	Ezequiel Birman:	La pregunta del millón es ¿cómo se banca la compu de Hernán tantos IDEs abiertos?
+01:46:03	Bruno M:	dejo este clásico: https://www.eecs.umich.edu/courses/eecs588/static/stack_smashing.pdf
+01:46:13	Hernan Wilkinson:	hay una IDE por cada usuario de zoom WIlkinson
+01:47:30	Cristián Pérez:	Porque es una Mac
+01:47:36	Cristián Pérez:	Simple
+01:48:01	Diego Colombo:	me hace mal ver los indices que empiezan en 1 y no en 0
+01:48:19	Hernan Wilkinson:	el argumento de c para no chequear es que el chequeo de bounds de array lleva mucho tiempo en runtime, no?
+01:48:40	Juan Vuletich:	asi es Hernán
+01:49:31	Daniel Maldonado:	Esta parcheado a medias
+01:51:59	Hernan Wilkinson:	siempre benchmarkear en vez de "suponer"
+01:52:07	Hernan Wilkinson:	jaja qué piolas, nadie define qué quiere decir “prematuro”, así cualquiera
+01:53:17	Hernan Wilkinson:	pyhton 3 es el contraejemplo
+01:53:26	Bruno M:	por si a alguno le interesa, respecto a C++, en la última Nerdearla el autor (Stroustrup) comenta cómo fue ajustando el lenguaje y como se fueron mejorando los estándares de C++
+01:53:31	Máximo Prieto:	Público == comercial
+01:53:41	Hernan Wilkinson:	"prematuro" es "nunca"
+01:53:52	Pablo Nussembaum:	c+++++
+01:54:45	Máximo Prieto:	Gracias por la palabra biblioteca, Juan
+01:54:50	Hernan Wilkinson:	así es que sufrimos el NULL, no? era fácil de implementar..
+01:55:15	Juan Vuletich:	👍🏻
+01:55:28	Diego Colombo:	Excelente Juan!
+01:55:37	Cristián Pérez:	Hola php8 y el brillante null safe operator
+01:55:47	Cristián Pérez:	Alta “feature” jaja
+01:56:00	Cristián Pérez:	mira que había cosas para copiar!
+01:57:01	Guillermo Perez:	va a ganar Hernan
+01:57:45	Máximo Prieto:	No dejen de colaborar económicamente. Fundamental para manteen estos webinars
+01:57:47	Nicolas Nobile:	profesores han dicho lo de los nombres je
+01:58:37	Hernan Wilkinson:	Lean el libro de Farley !!!!
+01:58:53	Diego Colombo:	cual? el ultimo?? oel de CD?
+01:58:54	Daniel Maldonado:	Si lo dice Hernan… tengo que leerlo
+01:58:55	Daniel Maldonado:	jaja
+01:59:43	Hernan Wilkinson:	https://www.goodreads.com/en/book/show/57345270-modern-software-engineering
+01:59:55	Diego Colombo:	ajhh ese es el libro nuevo
+02:00:23	Diego Colombo:	siganlo en el canal de YouTube que es muy buen aporte tambien
+02:00:30	Hernan Wilkinson:	y twitter
+02:00:47	Cristián Pérez:	The only way to go fast, is to go well
+02:01:20	Juan Vuletich:	Los que no lo hayan visto, gogleen y vean “WATMAN”
+02:01:43	Juan Vuletich:	https://www.destroyallsoftware.com/talks/wat
+02:02:55	Lucas Moglia:	🙌🏻
+02:04:14	Hernan Wilkinson:	HW es un ejemplo...
+02:05:56	Hernan Wilkinson:	hagamos un hashmap que es mas eficiente y no aprendimos nada de optimización prematura
+02:06:20	Leonel Axel Stambul:	eso eso, la cosa q nos hace sufrir
+02:06:23	Nicolas Nobile:	la del ansioso, lo suplico
+02:06:25	Juan Pablo Ospina Herrera:	La ultima
+02:06:28	Juan Cruz Ajuria:	el ansioso el ansioso 
+02:08:23	Máximo Prieto:	Aguante Smalltalk
+02:08:30	Máximo Prieto:	Y Cuis
+02:12:39	Lorenzo Lamas:	El que le toca va a gritar
+02:12:55	Ricardo Mercado:	Grande !!!
+02:13:00	Gonzalo Vivas:	felicitaciones a los ganadores!!!
+02:13:07	Hernan Modrow:	Felicitaciones!!
+02:13:08	Lorenzo Lamas:	Felicitaciones !
+02:13:15	Juan Cruz Ajuria:	felicitacionesss
+02:13:18	Juan Carlos Humpiri:	Felicitaciones!!!
+02:13:25	Andrea Storniolo:	Felicitaciones  alos ganadores!!!
+02:13:26	Evar Marro:	Muchas gracias por el tiempo dedicado a enseñarnos!
+02:13:29	Agustín Salvidio:	felicitaciones!
+02:13:33	Bruno M:	muchas gracias
+02:13:35	Fabian Diaz:	Mil gracias !!!!
+02:13:37	Jaime Sossa:	gracias!
+02:13:37	Máximo Prieto:	Una gran noche. Gracias a Todos
+02:13:39	Leonel Axel Stambul:	gracias!!!
+02:13:40	Hernan Wilkinson:	gracias!!!!
+02:13:40	Ezequiel Balsamo:	Felicitaciones!!
+02:13:40	Alexis Soifer:	Muchas gracias Hernan! estuvo muy Bueno, abrazo!
+02:13:41	Hernan Modrow:	JAJAJA! no va a pasar..
+02:13:41	Leandro Bravo:	Gracias!!
+02:13:41	Mathias Seberio:	Gracias!
+02:13:42	Juan Pablo Ospina Herrera:	Muchas gracias
+02:13:42	David Gonzalez:	Muchas gracias. Nos vemos
+02:13:42	Juan Carlos Humpiri:	Gracias a todos  los HW
+02:13:44	Ezequiel Balsamo:	Graciaaaaas!
+02:13:45	Ariel Dc:	Muchas gracias!! saludos!!!
+02:13:45	Gonzalo Vivas:	Gracias, excelente!
+02:13:46	Omar Huanca:	Gracias .!
+02:13:47	Ezequiel Contarino:	Muchas gracias !!
+02:13:48	Andrea Storniolo:	Muchas gracias ...hasta el miercoles
+02:13:48	Lucía Krayacich:	Gracias!
+02:13:48	Nicolas Hernández Amor:	Muchas gracias! Un lujo
+02:13:48	Pablo Nussembaum:	muchas gracias!!!
+02:13:49	Juan Knebel:	muchgas gracias!
+02:13:49	Agustín Salvidio:	graciaaaas!
+02:13:51	Mariano Luzuriaga:	gracias! espectacular
+02:13:51	Santiago Pivetta:	Gracias!
+02:13:52	Hernan Modrow:	Muchas gracias!! Hasta la próxima.
+02:13:53	Juan Cruz Ajuria:	Muchas gracias 
+02:13:55	Damián Mazzini:	saludos!
+02:13:57	Lucas Moglia:	Gracias 💪🏻
+02:13:57	Juan Vuletich:	gracias!

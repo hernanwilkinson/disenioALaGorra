@@ -1,0 +1,15 @@
+; binding dinamico
+
+
+(defun devolver-una-variable () una-variable)
+
+(defun otra-una-variable () 
+  (let ((una-variable 20)) (devolver-una-variable)))
+
+(devolver-una-variable)
+
+(otra-una-variable)
+
+(devolver-una-variable)
+
+
