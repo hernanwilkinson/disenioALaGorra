@@ -25,7 +25,7 @@ class Ejemplo {
     }
 
     prefixNames(names) {
-        return names.map((name) => {
+        return names.map(function (name) {
             return this.prefix + ': ' + name;
         })
     }

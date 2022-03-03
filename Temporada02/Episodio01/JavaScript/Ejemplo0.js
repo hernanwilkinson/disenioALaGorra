@@ -40,9 +40,8 @@ class Provider {
     }
 
     addAllDependants(dependants) {
-        this._associated_dependants ||= []
-        //dependants.forEach(dep=>this.addDependant(dep))
-        this._associated_dependants.push(...dependants)
+        this._assocaited_dependents ||= []
+        this._assocaited_dependents.push(...dependants)
     }
 
     isNamed(potentialName){
@@ -62,28 +61,7 @@ console.log(juan.includesDependant("dep2"))
 juan.addAllDependants(["dep3","dep4"])
 console.log(juan.includesDependant("dep2"))
 console.log(juan.includesDependant("dep3"))
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-const Juan = new Provider("Juan",new Address("San Martin",2233,"Olivos"))
-Juan.addDependant("dep1")
-console.log(Juan.includesDependant("dep1"))
-Juan.addDependant("dep2")
-console.log(Juan.includesDependant("dep2"))
-console.log(Juan.includesDependant("dep3"))
-Juan.addAllDependants(["dep3","dep4"])
-console.log(Juan.includesDependant("dep3"))
-*/
+// El error es el nombre de la variable assocaited_dependents, tiene 2 typos
 
 
 

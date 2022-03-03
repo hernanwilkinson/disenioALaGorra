@@ -8,4 +8,4 @@ def conditionally_defined_var(should_define_var):
     return a_lambda()
 
 
-print(conditionally_defined_var(False))
+print(conditionally_defined_var(True))

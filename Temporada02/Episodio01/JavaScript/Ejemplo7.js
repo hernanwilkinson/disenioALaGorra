@@ -25,8 +25,8 @@ const _ = { title: 'iPad mini', price: 499, displaySize: 8.3 }
 
 const ipads = [
     { title: 'iPad mini', price: 499, displaySize: 8.3 },
-    { title: 'iPad', price: 329, displaySize: 10.2 },
-    { title: 'iPad air', price: 599, displaySize: 10.9, color: 'blue' }];
+    { title: 'iPad', price: 329, displySize: 10.2 },
+    { title: 'iPad air', prce: 599, displaySize: 10.9, color: 'blue' }];
 
 ipads.forEach(ipad => console.log(ipad.title + " " + ipad.price + " " + ipad.displaySize + " " + ipad.color ))
 // Qué problemas tiene?

@@ -1,7 +1,7 @@
 function conditionally_defined_var(should_define_var) {
 
     if (should_define_var) {
-        var temp1 = 1
+        let temp1 = 1
     }
 
     const a_closure = () => {

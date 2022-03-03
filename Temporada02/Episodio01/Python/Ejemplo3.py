@@ -2,7 +2,6 @@ def same_var_defined_in_closure():
     temp1 = 1
 
     def a_lambda():
-        nonlocal temp1
         temp1 = 10
         return temp1 + 2
 

@@ -10,4 +10,4 @@ function conditionally_defined_var($should_define_var) {
     return $a_closure();
 }
 
-print conditionally_defined_var(false);
+print conditionally_defined_var(true);
