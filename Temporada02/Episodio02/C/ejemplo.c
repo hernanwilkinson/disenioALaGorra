@@ -17,14 +17,15 @@ void arrayDoWithIndex(int arrayToIterate[], int arrayToIterateSize,void (*func)(
 void arrayFilter(int arrayToFilter[], int arrayToFilterSize, int filteredArray[], int filteredArraySize, int* found,int (*condition)(int)) {
 
     *found = 0;
+    if(*found >= filteredArraySize)
+        return;
 
     for (int i = 0; i < arrayToFilterSize; i++) {
         if ((*condition)(arrayToFilter[i])) {
-
-            if(*found == filteredArraySize)
-                return;
-
             filteredArray[(*found)++] = arrayToFilter[i];
+
+            if(*found >= filteredArraySize)
+                return;
         }
     }
 }
@@ -44,12 +45,6 @@ int main()
     int evensFound = 0;
 
     arrayFilter(numbers, sizeof(numbers)/sizeof(int), even, sizeof(even)/sizeof(int), &evensFound, &isEven);
-
-    printf("Encontrados: %i\n", evensFound);
-    for (int i = 0; i < evensFound; i++) {
-       printf("even[%i]=%i\n", i, even[i]);
-    }
-
     arrayDoWithIndex(even,evensFound,&printEvens);
 
     return 0;
