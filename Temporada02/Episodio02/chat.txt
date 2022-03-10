@@ -1,0 +1,228 @@
+00:11:04	Maximiliano Contieri:	Buenas noches
+00:12:08	Maximo Prieto:	Hola
+00:12:09	Juan Vuletich:	Buenas!
+00:12:16	Federico Iachetti:	hola gente
+00:12:17	Juan Carlos Humpiri:	Buenas noches.
+00:12:21	Federico Iachetti:	cómo están?
+00:12:55	Juan Carlos Humpiri:	Los masoquistas
+00:12:56	Juan Carlos Humpiri:	:D
+00:12:57	Federico Iachetti:	masoquistas al poder
+00:14:32	Maximo Prieto:	Hoy veo sólo 2 Wilkinsons. Un avance
+00:15:04	Omar Huanca:	jajajaja
+00:15:06	Ezequiel Birman:	¿Wilkinson «el malo»?
+00:15:22	Maximo Prieto:	El malo es el que está hablando
+00:15:25	Ricardo Mercado Visbal:	🤣
+00:17:32	Pablo Scolpino:	Seninfeld, a series about Null
+00:18:09	Federico Iachetti:	que buena serie .... tendría que poner un episodio
+00:26:08	Maximo Prieto:	Aguante Pascal
+00:29:39	Facundo Javier Gelatti:	Y ese artículo es de 1965! https://dl.acm.org/doi/10.5555/1061032.1061041
+En qué se habrá inspirado?
+00:31:21	Ezequiel Birman:	En Lisp el equivalente a los records son las associations lists
+00:34:39	Emilio Echeverria:	En .NET, WPF, una vez tuvimos que resolver un error que decía: "Null is Null or not an object"Sin stack trace, ni línea de código, runtime...
+00:38:06	Juan Carlos Humpiri:	en JavaScript existe null y undefined, para mayor adrenalina
+00:38:34	Lorenzo José Lamas:	Si vamos a rantear, no olvidemos de los NaN
+00:38:42	Ignacio Jauregui:	ja ja ja, para mas placer >D
+00:38:46	Daniel Maldonado:	Puede representarlo.. pero debe ?
+00:38:49	Jeronimo Carrizo:	Claro y en algunos casos funcionan distinto, como los default parameter que funcionan con undefined y no con null en JS
+00:39:00	Maximiliano Contieri:	Los "optionals" son otro code smell
+00:39:05	Maximiliano Contieri:	nulls encubiertos
+00:42:22	Pablo Lucero:	en este caso como haria maxi? crearias una clase EmptyStreet con los atributos name y address como cadenas vacias?
+00:45:22	Maximiliano Contieri:	espera a la solución de hernan
+00:45:25	Maximiliano Contieri:	null objects
+00:46:46	Maximiliano Contieri:	fíjense que el Null object NO Hereda. esto esta mal en el libro de patrones. tiene que tener una iinterfaz comun
+00:46:46	Jeronimo Carrizo:	Ahi esta, NotProvidedAddress :p
+00:47:06	Maximiliano Contieri:	el Gamma pide que tengan superclase común. no había tantas interfaces
+00:47:25	Facundo Javier Gelatti:	@Maxi pero el problema es "tener null" (es decir, el "null" per se), o las consecuencias que eso genera?
+Pregunto porque por ejemplo en Java para mí hay varias desventajas de usar null que no están cuando usás un Optional
+No digo que siempre sea mejor, pero tampoco pienso que _siempre_ sea mejor usar un null object vs. un Optional, ni que usar un Optional esté "mal" porque es "un null encubierto" (el mismo argumento se podría usar con un null object, no? Decir que es un "null encubierto", si hasta el nombre del patrón lo dice! :P)
+00:48:06	Maximiliano Contieri:	el null obejct no es un "null encubierto" . es un objeto que SI existe y tiene un protocolo y significado
+00:48:20	Maximiliano Contieri:	y además es polimórfico. chau ifs
+00:48:27	Maximiliano Contieri:	(pero no spoileo mas)
+00:48:40	Diego Colombo:	y por que tiene que ser implementado por interfaz o clase abstractea y no por herencia??
+00:48:50	Maximiliano Contieri:	la herencia tiene mucho mas acoplamiento
+00:49:23	Maximiliano Contieri:	y no representa la relación 'se comporta como' y tiene un único eje (no hay herencia multiple) . las interfaces respetan los criterios SOLID
+00:49:25	Federico Iachetti:	otro argumento podría ser que vas a tener que sobreescribir todos los métodos, no?
+00:49:31	Maximo Prieto:	Lo que dice Maxi vale también para proxy y otros
+00:49:39	Maximiliano Contieri:	no. no heredas clase concreta nunca
+00:49:44	Guillermo Perez:	los optionals son iterables entonces?
+00:49:51	Maximiliano Contieri:	el Gamma propone una clase abstracta. al pedo
+00:50:11	Diego Colombo:	perdon, en Python o en Smalltalk hay interfaces??
+00:50:14	Maximo Prieto:	No lo llames el Gamma, please
+00:50:18	Maximiliano Contieri:	sobreescribir métodos es 'yet another code smell'
+00:50:37	Maximo Prieto:	No, Diego
+00:50:43	Maximiliano Contieri:	Todos los libros académicos se suelen llamar por el nombre del primer autor alfabetico
+00:50:50	Pep Diz:	¿y no sería mejor tener un objeto Empty, instancia de la clase Address, en lugar de una clase EmptyAddress?
+00:50:59	Maximiliano Contieri:	si vos escribis con Hernan seria 'El Prieto'
+00:51:01	Maximo Prieto:	Eso no vale, Maxi
+00:51:12	Maximo Prieto:	Yo lo llamaría el Johnson
+00:51:12	Facundo Javier Gelatti:	@Maxi Bueno, pero el Optional también es un objeto con un protocolo bien definido (como los null objects, y a diferencia del null). Y el Optional no representa lo mismo que el objeto que puede estar o no, por lo tanto no es polimórfico (y a veces podemos querer eso, cierto?)
+00:51:25	Maximiliano Contieri:	lo que dice Pep esta muy bien
+00:51:44	Facundo Javier Gelatti:	+1!
+00:52:01	Maximiliano Contieri:	si no es polimórfico tenes el código infestado de IFs. esos son los que se rompen en producion a las 3 AM
+00:52:08	Diego Colombo:	perdon que vuelva a insitir, como lo implemento el Null object en Python?
+00:52:21	Maximiliano Contieri:	con una clase polimórfica al real object
+00:52:29	Maximiliano Contieri:	y con buenos tests
+00:53:09	Maximiliano Contieri:	ahí lo cuenta Hernan
+00:58:09	Daniel Maldonado:	Y el doble dispatch ?
+00:59:29	Juan Carlos Humpiri:	Siii
+00:59:34	Juan Carlos Humpiri:	se entendio perfecto
+00:59:40	David Gonzalez:	Va bien
+01:00:04	Miguel Melgar:	está bien no trabajar con null en la persistencia?
+01:00:19	Maximo Prieto:	David suele decir “bastante” bien. Está madurando
+01:01:55	Maximiliano Contieri:	la persistencia es otro mundo. es irrelevante a la hora de modelar el dominio
+01:02:07	Maximo Prieto:	Eso pasa por usar ejemplos allá Vuletich
+01:04:12	Daniel Maldonado:	“depende”
+01:10:11	Facundo Javier Gelatti:	Ese me parece un buen ejemplo de un caso en donde no nos sirve que el objeto que usemos sea polimórfico con el objeto que puede estar o no! Por otro lado, sobre los ifs, Optional tiene un protocolo que podemos usar para hacer estas cosas sin agregar ifs adicionales, con lo cual no sería un problema en estos casos
+01:10:36	Maximiliano Contieri:	empezas a usar el coalescence que esconde errores ??
+01:10:40	Maximiliano Contieri:	'??'
+01:10:47	Maximiliano Contieri:	no es una pregunta. es el operador
+01:12:12	Maximiliano Contieri:	moto? hoy todos somos Vuletich !
+01:12:29	Maximo Prieto:	Aguante Vuletich
+01:13:34	BrunoM:	@Facundo, si te referís al ejemplo del User, en ese caso el tema creo que está más relacionado a responsabilidades de los objetos que a polimorfismo (el User no debería saber imprimirse o saber si se le tiene que mandar un mail, digamos, por ejemplo)
+01:14:42	Facundo Javier Gelatti:	@Bruno tal cual!
+01:15:02	Federico Iachetti:	al final habló un montón sobre nada
+01:15:15	Maximiliano Contieri:	nulltalk
+01:15:25	Maximo Prieto:	Sí. No hay nada que hacer al respecto
+01:15:29	Ezequiel Birman:	«No tengo nada para decir y lo estoy diciendo» --John Cage
+01:15:31	Guillermo Perez:	Una cosa sobre los Optionals. En SML vi que podes preguntar si tiene valor, pero lo recomendado es usar pattern matching. Y el propio lenguaje te impide olvidarte de un caso. Entonces, si vas a mandar un mal, podes enviarlo condicionalmente con pattern matching
+01:15:44	Guillermo Perez:	*mail
+01:15:52	Maximo Prieto:	Muy bueno, Ezequiel
+01:16:15	Pep Diz:	si, lisp es una hermosa flor y punto ;-)
+01:16:25	Maximo Prieto:	Me hiciste acordar a su obra 4:33
+01:16:28	Ezequiel Birman:	que es paráfrasis de Karl Kraus: «Un periodista es alguien que no tiene nada para decir y lo dice»
+01:16:36	BrunoM:	jajajaja
+01:16:41	Maximiliano Contieri:	Y recuerden que todo Ser cree ser todo; pero nada es todo: todo es apenas nada; el ave es nada, porque vuela; el pez es todo, porque nada.
+01:16:49	Maximiliano Contieri:	Les Luthiers...
+01:16:57	Maximo Prieto:	Genios
+01:17:19	Diego Colombo:	👏
+01:19:24	Daniel Maldonado:	Lazy evaluation )?
+01:19:27	BrunoM:	respecto a Pattern MAtching Scala tiene algo llamado Sealed Traits: https://www.geeksforgeeks.org/scala-sealed-trait/Lo cual define una serie de posibilidades que definen todo el dominio y evita además tener que chequear por valores "ajenos"... o null, por ej
+01:19:56	BrunoM:	Java tmb lo agregó en la version... 14? 17? Por ahí..
+01:21:44	Maximo Prieto:	Y no somos declarativos
+01:22:32	Ezequiel Birman:	muchotexto
+01:22:51	Maximo Prieto:	muchoTexto
+01:23:15	Bauna:	el intelliJ lo simplificaba "visualmente"
+01:23:35	Bauna:	te lo muestra como un "lambda"
+01:23:45	Bauna:	a eso llegamos :P
+01:24:37	Maximiliano Contieri:	muestrenle a Hernan lo de inteliJ
+01:24:52	Daniel Maldonado:	El dark mode tambien )?
+01:26:53	Nicolas Nobile:	me preguntaron sobre parallel stream en una entrevista, desde ese entonces la simple palabra stream me genera rechazo jee
+01:27:28	BrunoM:	el parallel stream tiene algunas particularidades; no se puede usar "suelto de cuerpo"
+01:27:40	BrunoM:	ej, usá un fork-join thread pool global, por defecto
+01:27:45	BrunoM:	(en Java)
+01:28:17	BrunoM:	además de que hay que ver si es válida la concurrencia en la operatoria de todos los items del stream
+01:32:17	Maximiliano Contieri:	esa definición ya no se usa en JS. ahora se utilizan arrow functions
+01:35:39	Maximiliano Contieri:	volvemos al tema del scope de la clase pasada
+01:36:15	Juan Carlos Humpiri:	memoria dinamica
+01:36:38	Juan Carlos Humpiri:	?
+01:36:45	Juan Carlos Humpiri:	usando heap
+01:36:49	Maximiliano Contieri:	"chanchada orientada a objetos" en C
+01:37:01	Juan Carlos Humpiri:	jajaja
+01:37:17	Maximiliano Contieri:	el heap genera acoplamiento y no es reentrante
+01:38:17	Juan Pablo Ospina Herrera:	Ese codigo parece Go
+01:38:29	Pep Diz:	pero esto no requiere un closure
+01:38:39	Maximiliano Contieri:	Go tampoco tiene closures completas
+01:39:00	Pep Diz:	un lenguaje con binding dinámico permite hacer eso 
+01:39:19	Federico Iachetti:	ya tengo algo para hablar con mi psicóloga
+01:39:46	Jeronimo Carrizo:	Me quedo en el tintero una pregunta de la clase de la semana pasada, en JS Hernan, mostró al momento que explicaba el abuso de estructura de datos y el lack de la conceptualizacion en lenguajes prototipos como JS, propuso una solución usando classes para conceptualizar el dominio. Ahora en JS, las class, es un sintax sugar de los prototipos, y cada attributo de una clase es publico por defecto. Entonces, yo quería preguntar, en términos de conceptualizar nuestro dominio en JS, en vez de usar clases usar Funciones.
+01:39:49	Diego Colombo:	si tu psicologa entiende codigo recomendala por favor
+01:40:00	Maximiliano Contieri:	tu psicóloga te debuguea
+01:40:28	Maximo Prieto:	No Debugger, inspecciona
+01:40:35	Maximiliano Contieri:	introspecciona
+01:42:08	Facundo Javier Gelatti:	Pero... no es el debugger un inspector? :P
+01:42:10	Ezequiel Birman:	@Jerónimo https://academia-10pines.slack.com/archives/C02437KDLBW/p1646317670095979?thread_ts=1646271024.952409&cid=C02437KDLBW
+01:42:12	Pep Diz:	para poder hacer eso tienes que usar lisp ;-)
+01:43:09	Jeronimo Carrizo:	A ver eze!
+01:44:02	Ezequiel Birman:	también podés usar prototipos como se pensó originalmente
+01:44:56	Maximo Prieto:	¿Un poquito de ignorancia, tal vez?
+01:45:29	Daniel Maldonado:	Siempre hay mas posibilidades de errarla en la vida
+01:45:39	Maximiliano Contieri:	el emperador esta desnudo
+01:46:29	Pep Diz:	hay lenguajes en que crear un closure no es más costoso 
+01:46:30	Maximiliano Contieri:	optimizaciones
+01:46:55	Maximiliano Contieri:	"premature optimization is the root of all evil"
+01:48:28	Pep Diz:	exacto, y el mismo while es un bloque de código
+01:49:32	Maximiliano Contieri:	exacto. la performance es siempre secundaria
+01:49:38	Maximiliano Contieri:	no estamos en los 60s
+01:50:00	Guillermo Perez:	como es en smalltalk un bloque que recibe parametros?
+01:50:05	Hernan Modrow:	lo que tiene que ser performante es la capa 8
+01:50:05	Maximiliano Contieri:	ojo. en smalltalk el while no es un bloque. esta optimizado por detrás sin perder riqueza conceptual
+01:50:20	Pep Diz:	ya, me refería a lisp ;-)
+01:50:25	Maximiliano Contieri:	[:param | código que usa param]
+01:50:42	Guillermo Perez:	👌
+01:51:59	Hernan Modrow:	faltaba pegarle a JS
+01:54:09	Leonel Axel Stambul:	jajajaja
+01:54:17	Juan Pablo Ospina Herrera:	Jajaja
+01:54:48	Ezequiel Birman:	@Juan relacionado con tu idea, https://github.com/jacksonrayhamilton/context-coloring/ colorea el código según el «nivel» de scoping en lugar de hacerlo en base a sintaxis o reconocimiento de palabras clave
+01:55:40	Maximiliano Contieri:	Maniac Mansion
+01:56:52	Ignacio Jauregui:	en VB6 se podía agregar la opción “option explicit”para que haga un chequeo en compilación y te pida por lo menos declaración de variables. Algo es algo 🙂
+01:56:55	Diego Colombo:	the day of the tentacle
+02:00:18	Guillermo Perez:	Por que C entendia el mensaje si el nombre del metodo era distinto?
+02:04:25	Fernando Laudadio:	debe ser porque piensa que es una Mansion y en cierta porcion de memoria a partir de donde esta esa instancia, hay un metodo, aunque en su lugar halla otro. Igual que lo confirmen los que saben jaja
+02:04:29	Pep Diz:	no era C era C++ y a mi entender, entendía el mensaje porque C++ tiene una vtable para guardar los métodos de cada objeto,  que es un array de punteros a metodos, si tiene el mismo indice va a llamar correctamente 
+02:04:33	Omar Huanca:	parseInt, me mato
+02:04:57	Daniel Maldonado:	El oooooooocho
+02:05:26	Maximiliano Contieri:	https://0.30000000000000004.com/
+02:06:51	Juan Carlos Humpiri:	5
+02:06:55	Pep Diz:	42
+02:07:11	Lucas Raposeiras:	La joyita: https://www.destroyallsoftware.com/talks/wat
+02:07:13	Maximiliano Contieri:	truthy y falsy
+02:07:26	Omar Huanca:	super true ..... jajajja}
+02:07:32	Ezequiel Birman:	la verdad verdadera
+02:08:25	Diego Colombo:	excelente lo de wat!!!, es lo mas
+02:08:52	Guillermo Perez:	“para mas placer”
+02:09:22	Maximiliano Contieri:	"minima" sorpresa
+02:09:42	Damian Mazzini:	https://www.destroyallsoftware.com/talks/wat
+02:09:53	Maximiliano Contieri:	épico waaaaat
+02:09:54	Lucas Raposeiras:	“12”
+02:10:31	Maximiliano Contieri:	paso Peano y dijo que se dejen de joder
+02:10:33	Guillermo Perez:	ya dejalo, esta muerto
+02:10:36	Jaime Sossa:	por esto es que nacio typescript?
+02:10:54	Daniel Maldonado:	No, nació para vender
+02:10:54	Pep Diz:	javascript no es weak typed sino ill typed
+02:11:10	Maximiliano Contieri:	Fundaré mi propio lenguaje con enteros al azar y mujerzuelas
+02:11:26	Leonel Axel Stambul:	usare tu lenguaje maximo
+02:11:30	Leonel Axel Stambul:	y no x los enteros
+02:11:30	Pep Diz:	:D
+02:11:31	Leonel Axel Stambul:	jajajaja
+02:12:12	Maximiliano Contieri:	Hernan debería hacer un segundo video de Wat. armemos una pagina de Kickstarter
+02:12:14	Lorenzo José Lamas:	Es facil pegarle a js, pero como nos da de comer 😄
+02:12:30	Hernan Modrow:	@Daniel Maldonado TS tb para hacer sentir segura a la gente porque tiene tipado estático.
+02:12:49	Hernan Modrow:	** tb nació
+02:12:55	Lorenzo José Lamas:	Rueditas para las bicis de equipos con bajo seniority
+02:13:21	Hernan Modrow:	las rueditas son los tests
+02:13:42	Maximiliano Contieri:	esos casting locos favoreces que aparezcan Ninja Coders que abusan para mostrarse ante los juniors
+02:14:07	Daniel Maldonado:	A mi me genera mas carga cognitiva, prefiero tests para sentirme seguro, pero si hace sentir seguro a alguien que le de para delante
+02:15:02	Hernan Modrow:	la seguridad termina en el runtime..
+02:15:07	Maximiliano Contieri:	la pregunta del millón es "quien atiende las crisis en producción?"
+02:15:49	Lucas Raposeiras:	En C# también se puede hacer eso
+02:18:47	Daniel Maldonado:	datazo
+02:19:04	Ignacio Jauregui:	Conclusiones: No usar JS! 😄
+02:19:13	Maximiliano Contieri:	minimal = menos sorpresas
+02:21:56	Maximiliano Contieri:	había una pregunta de la clase pasada. ¿la podes hacer ahora?
+02:22:25	Maximiliano Contieri:	Jeronimo
+02:24:46	Ezequiel Birman:	También Erlang y Julia tienen buen soporte para multiple dispatch
+02:25:19	Diego Colombo:	masoquista
+02:25:31	Juan Pablo Ospina Herrera:	masoquista
+02:25:32	Ezequiel Bálsamo:	masoquista, claramente
+02:26:55	Ezequiel Birman:	somos 55
+02:27:02	Gabriel Emanuel Valenzuela:	Muchas gracias por todo, excelente !
+02:27:14	Ezequiel Birman:	54
+02:27:15	Daniel Maldonado:	zoom.randomParticipant()
+02:27:35	Maximiliano Contieri:	debe tener una API zoom
+02:27:40	Maximiliano Contieri:	cero privacidad
+02:30:38	Hernan Modrow:	Felicitaciones..!!!
+02:30:46	Ezequiel Bálsamo:	Felicitaciones!!
+02:30:49	Leonel Axel Stambul:	gracias x todo y felicitaciones a los ganadores!!! 
+02:30:51	Omar Huanca:	Genial Hernan.!
+02:30:51	Agustín Salvidio:	Felicitaciones!
+02:30:54	Ricardo Mercado Visbal:	felicitaciones
+02:30:54	Ezequiel Birman:	¡Gracias!
+02:30:57	Ignacio Jauregui:	gracias
+02:30:58	Nicolas Nobile:	buen episodio, buenisimo
+02:30:59	Maximiliano Alvarez:	gracias!!
+02:31:00	Ezequiel Bálsamo:	Gracias Hernán!
+02:31:02	Agustín Salvidio:	graciaaaas
+02:31:03	Emilio Echeverria:	gracias!
+02:31:04	Matias Santos:	Gracias!!
+02:31:05	Mathias Seberio:	Gracias!!
+02:31:09	Hernan Modrow:	Muchas gracias Hernan. Hasta la próxima..!!

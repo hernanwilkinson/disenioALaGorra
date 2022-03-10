@@ -1,0 +1,10 @@
+(defun select (lista condicion)
+  (cond
+   ((null lista) '())
+   ((funcall condicion (car lista)) (cons (car lista) (select (cdr lista) condicion)))
+   (T (select (cdr lista) condicion))))
+
+(select '(1 2 3 4 5) (lambda (n) (evenp n)))
+(select '(1 2 3 4 5) (lambda (n) (oddp n)))
+(select '(1 2 3 4 5) 'evenp)
+(select '(1 2 3 4 5) 'oddp)
