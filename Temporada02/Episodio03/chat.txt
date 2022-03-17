@@ -1,0 +1,650 @@
+19:02:04 From Maximiliano Contieri to Everyone:
+	buenas tardes
+19:02:28 From Ricardo Mercado Visbal to Everyone:
+	buenas tardes
+19:02:33 From Santiago Schuchinsky to Everyone:
+	Buenas tardes
+19:02:33 From Diego Colombo to Everyone:
+	Buenas tardes!!
+19:02:45 From Omar Huanca to Everyone:
+	Buenas tardes.!
+19:02:49 From David Gonzalez to Everyone:
+	Buenas
+19:03:41 From Eduardo Riesco to Everyone:
+	Alan Kay, 2015: Power of Simplicity:
+19:03:42 From Eduardo Riesco to Everyone:
+	https://www.youtube.com/watch?v=NdSD07U5uBs
+19:04:36 From Maximiliano Contieri to Everyone:
+	ese code smell se llama divergent change
+19:05:18 From Lorenzo José Lamas to Everyone:
+	La primer sigla que me enseñaron fue KISS. Y creo que tenemos que tatuárnosla
+19:05:31 From Maximiliano Contieri to Everyone:
+	YAGNI en el otro brazo
+19:06:04 From Lorenzo José Lamas to Everyone:
+	Acá está presente quien me gritaba yagni en la oficina ! Te extraño !!
+19:07:46 From Daniel Maldonado to Everyone:
+	O haciendo ejercicios de analisis matemático, antes de simplificar aveces tenes que hacer varias operaciones de algebra
+19:09:23 From Jaime Sossa to Everyone:
+	Make everything as simple as possible, but not simpler
+19:09:58 From Pablo Lucero to Everyone:
+	no se olviden de poner a grabar
+19:10:36 From Diego Colombo to Everyone:
+	software that fit in your head
+19:11:19 From Maximiliano Contieri to Everyone:
+	la alegoria de la caverna
+19:11:59 From Julián Aicardo to Everyone:
+	Microservicios quizá
+19:12:25 From Maximiliano Contieri to Everyone:
+	los microservicios violan todos los principios de Diseño de objetos
+19:12:46 From Lorenzo José Lamas to Everyone:
+	Para mi no
+19:12:53 From Lorenzo José Lamas to Everyone:
+	Porque lo decís maxi ?
+19:13:15 From Maximiliano Contieri to Everyone:
+	por que no modelan ningun comportamiento de la realidad. solo "datos"
+19:13:30 From Maximiliano Contieri to Everyone:
+	en nombre de la performance utilizan primitive obsession
+19:13:34 From Julián Aicardo to Everyone:
+	Apa, no la tenía a esa
+19:13:46 From Lorenzo José Lamas to Everyone:
+	Depende como pienses tus servicios
+19:14:04 From Maximiliano Contieri to Everyone:
+	toma cualquier microservicio y trata de encontrar logica de negocios. nunca la hay. solo algoritmos
+19:14:31 From Ezequiel Birman to Everyone:
+	Me gusta mucho esta frase de Alfred Jarry (en una nota al pie de su primer libro de poemas):		La simplicité n'a pas besoin d'être simple, mais du complexe resserré et synthétisé.		La simplicidad no necesita ser simple, más bien complejidad vuelta tensa y sintetizada.
+19:14:36 From Maximiliano Contieri to Everyone:
+	si pensas los servicios modelando entes del dominio tenes que cargar bocha de clases y ya no son microservicios
+19:14:39 From Lorenzo José Lamas to Everyone:
+	Creo que es de como lo implementan en muchos lados y no de la idea de micro servicios en si
+19:14:45 From Maximiliano Contieri to Everyone:
+	porque necesitas la banana, el gorila y la jungla
+19:15:26 From Lorenzo José Lamas to Everyone:
+	Depende que pensemos que es un micro y que es un servicio
+19:15:45 From Daniel Maldonado to Everyone:
+	Que hacían billeteras
+19:16:12 From Maximiliano Contieri to Everyone:
+	yo trabajo con lambdas. no tenes mucho poder expresivo alli. en smart contracts menos. solo strings , arrays y numeritos
+19:17:46 From Ezequiel Birman to Everyone:
+	Ah, aws lambdas!
+19:18:28 From Lorenzo José Lamas to Everyone:
+	En gcp estamos pudiendo modelar con sus cloud functions
+19:19:54 From Maximiliano Contieri to Everyone:
+	cambia de trabajo, Ariel
+19:20:19 From Maximiliano Contieri to Everyone:
+	no pelees con el PO, hay muchas empresas que laburan bien
+19:20:20 From Juan Carlos Humpiri to Everyone:
+	Tiene mucha razón Ariel
+19:20:27 From Juan Carlos Humpiri to Everyone:
+	me pasa lo mismo, jajaja
+19:20:32 From Diego Colombo to Everyone:
+	Data la solucion es Data
+19:20:40 From Diego Colombo to Everyone:
+	y sacar el DORA Report
+19:20:48 From Maximiliano Contieri to Everyone:
+	tenemos pleno empleo, podemos elegir
+19:20:55 From Pablo Lucero to Everyone:
+	tira nombre maxi
+19:21:00 From Daniel Maldonado to Everyone:
+	En mi laburo por suerte no me dicen como implementar cierta feature… me dicen hay que hacer tal cosa y yo decido hacer tdd (cuando me conviene)
+19:21:33 From Maximiliano Contieri to Everyone:
+	cuando te hagan una entrevista de trabajo, hace la entrevista vos y no trabajes donde no trabajan como te gusta
+19:21:58 From Santiago Pivetta to Everyone:
+	De todo eso habla el polemico uncle bob en the clean coder, ser profesionales
+19:22:36 From Maximiliano Contieri to Everyone:
+	polemico por sus opiniones politicas pero increible programador
+19:22:57 From Daniel Maldonado to Everyone:
+	jajaja
+19:23:13 From Maximiliano Contieri to Everyone:
+	no lo cancelen al tio. solo seleccionen sus tweets
+19:23:43 From Santiago Pivetta to Everyone:
+	Jaja concuerdo
+19:24:16 From Maximiliano Contieri to Everyone:
+	ahi tenes nombres. el favorito del TIO
+19:24:38 From Diego Colombo to Everyone:
+	justo empezaron con la matematica se hizo con todo una Letra, ahora nombres, que coincidencia
+19:25:09 From Capacitacion 10Pines to Everyone:
+	https://www.menti.com/viak3xoxmb
+19:25:44 From Juan Carlos Humpiri to Everyone:
+	yo veo preguntas
+19:26:05 From Juan Carlos Humpiri to Everyone:
+	si
+19:26:06 From Maximiliano Contieri to Everyone:
+	veo preguntas y escucho dibujitos animados
+19:26:18 From Daniel Maldonado to Everyone:
+	El viejo Go TO
+19:26:34 From Maximiliano Contieri to Everyone:
+	no tiene tests
+19:30:00 From Lorenzo José Lamas to Everyone:
+	No vale algoritmos que sabemos de memoria
+19:32:02 From Federico Iachetti to Everyone:
+	yo volví a ver Diseño a la gorra temporada 1, así que lo mío es trampa
+19:33:30 From Diego De Cristofano to Everyone:
+	un profe una vez dijo: tenemos que programar "en algún idioma"
+19:36:15 From Lorenzo José Lamas to Everyone:
+	Camel, snake o que case 🤔
+19:36:29 From Maximiliano Contieri to Everyone:
+	https://www.menti.com/viak3xoxmb
+19:36:32 From Maximiliano Contieri to Everyone:
+	estan pidiendo el menti
+19:36:40 From Ezequiel Birman to Everyone:
+	SPonGeBobcASe
+19:37:22 From Juan Carlos Humpiri to Everyone:
+	jajaaj
+19:37:25 From Juan Carlos Humpiri to Everyone:
+	:D
+19:37:43 From Nicolas Nobile to Everyone:
+	entendi esa referencia eze jajaja
+19:39:28 From Ezequiel Birman to Everyone:
+	Ahora entiendo mejor el código pero no por la versión nueva
+19:43:26 From Nicolas Nobile to Everyone:
+	lamentablemente tengo que retirarme antes hoy, espero ansioso la grabación. De nuevo, muchas gracias por este espacio! 
+19:44:33 From Leonel Axel Stambul to Everyone:
+	me vi tentado a poner la opcion 3
+19:44:40 From Emmanuel Chang to Everyone:
+	same jajajaa
+19:47:39 From Lucas Raposeiras to Everyone:
+	es C#?
+19:48:20 From Maximo Prieto to Everyone:
+	Es java, ¿por?
+19:51:06 From Ezequiel Birman to Everyone:
+	Build the right thing vs build the thing right
+19:51:13 From Leonel Axel Stambul to Everyone:
+	muy buena
+19:51:20 From Maximo Prieto to Everyone:
+	Faltan los test
+19:51:48 From Hernan Wilkinson to Everyone:
+	De acuerdo
+19:53:09 From Emmanuel Chang to Everyone:
+	está mal pero no tan mal
+19:53:19 From Daniel Maldonado to Everyone:
+	jajaj
+19:53:58 From Lucas Raposeiras to Everyone:
+	para que ponerle n, r, i si se puede ser un poco mas explicito? un poco nomas, hay que encontrar el balance
+19:54:01 From Leonel Axel Stambul to Everyone:
+	uh se va a picar
+19:55:24 From Lorenzo José Lamas to Everyone:
+	Again, malos nombres conocidos, por buenos nombres por conocer jajaja
+19:56:11 From Hernan Modrow to Everyone:
+	es todo culpa de los matemáticos.. y sus i, j, n_i, n_j
+19:57:20 From Emmanuel Chang to Everyone:
+	^
+19:57:23 From Maximo Prieto to Everyone:
+	La verdad existe, pero yo la conozco
+19:57:27 From Leonel Axel Stambul to Everyone:
+	me gusta eso d pensar en grados d mentira y no en grados d verdad
+19:57:45 From Ricardo Mercado Visbal to Everyone:
+	hasta que entro un junior
+19:57:49 From Daniel Maldonado to Everyone:
+	No todos los filósofos griegos pensaban así, ojo
+19:57:51 From Daniel Maldonado to Everyone:
+	jaja
+19:58:57 From Maximo Prieto to Everyone:
+	Qué oalabra
+19:59:02 From Maximo Prieto to Everyone:
+	Cognitivo
+19:59:19 From Daniel Maldonado to Everyone:
+	Muy buena reflexion
+19:59:35 From Ezequiel Birman to Everyone:
+	¿Ud. cognoce del tema Máximo?
+20:00:00 From Maximo Prieto to Everyone:
+	Sólo sé que nada sé
+20:00:21 From Maximo Prieto to Everyone:
+	Pero conozco un poquito
+20:00:39 From Diego Atayra to Everyone:
+	Juan Vuletich, gracias, pusiste en mejores palabras lo que yo pensaba.
+20:01:22 From Omar Huanca to Everyone:
+	Realizando analogia, escribir los colores pintados de otro color ........
+20:02:04 From Hernan Modrow to Everyone:
+	acaso programamos mal? nah.. programamos tan bien que la mayoría ni tests hace..
+20:02:15 From Leonel Axel Stambul to Everyone:
+	jajajajajaja
+20:02:38 From Lorenzo José Lamas to Everyone:
+	A menos que quieras ver el mundo arder
+20:03:00 From Omar Huanca to Everyone:
+	el mundo arder ..... jajajaja
+20:03:01 From Facundo Javier Gelatti to Everyone:
+	Una sutileza ahí es que la "i" en el código no era un índice
+20:03:12 From Eduardo Riesco to Everyone:
+	https://clinicahegoak.com/juego-psicologia-colores-palabras
+20:03:35 From Maximiliano Contieri to Everyone:
+	premature optimizators everywhere
+20:03:51 From Lucas Raposeiras to Everyone:
+	programamos para otros humanos, no para la maquina
+20:03:53 From Maximiliano Contieri to Everyone:
+	son nuestros nemesis
+20:04:13 From Diego De Cristofano to Everyone:
+	quizás se gasta el teclado usando nombres más descriptivos y largos
+20:04:14 From Hernan Modrow to Everyone:
+	avisale a los configuran los linters con líneas de 80 caracteres máximo
+20:04:14 From Diego Atayra to Everyone:
+	write only code
+20:04:25 From Maximiliano Contieri to Everyone:
+	“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”
+20:04:36 From Lorenzo José Lamas to Everyone:
+	Configura mejor tu Linter jajaja
+20:04:52 From Federico Iachetti to Everyone:
+	el famoso 10X programmer
+20:04:52 From Maximiliano Contieri to Everyone:
+	<3
+20:05:03 From Juan Vuletich to Everyone:
+	muy bueno maxi!
+20:05:21 From Maximiliano Contieri to Everyone:
+	"too clever programer"
+20:05:28 From Maximiliano Contieri to Everyone:
+	no lo invente yo
+20:05:37 From Leonel Axel Stambul to Everyone:
+	como q no? es el hijo d su tio
+20:05:42 From Leonel Axel Stambul to Everyone:
+	jajajaja
+20:07:03 From Hernan Wilkinson to Everyone:
+	Las recomendaciones del grande Golang https://talks.golang.org/2014/names.slide#1 🙁
+20:07:23 From Ezequiel Birman to Everyone:
+	Bayes?
+20:08:52 From Hernan Modrow to Everyone:
+	después de la falta de excepciones en GoLang ya nada me sorprende..
+20:09:15 From No soy Hernan Wilkinson to Everyone:
+	Y lo peor es que muchas compañías lo promueven como la panacea del siglo XXI
+20:09:38 From Eduardo Riesco to Everyone:
+	https://www.kalzumeus.com/2010/06/17/falsehoods-programmers-believe-about-names/
+20:10:19 From Santiago Pivetta to Everyone:
+	Quizas porque había que escribir a mano en esa epoca
+20:10:45 From Hernan Modrow to Everyone:
+	🤔
+20:11:25 From Maximiliano Contieri to Everyone:
+	volvemos al primo de Wilkinson https://es.wikipedia.org/wiki/El_idioma_anal%C3%ADtico_de_John_Wilkins
+20:17:11 From Eduardo Riesco to Everyone:
+	“El mundo era tan reciente que muchas cosas carecían de nombre, y para nombrarlas había que señalarlas con el dedo". Gabriel Garcí­a Márquez, Cien años de soledad.
+20:17:14 From Omar Huanca to Everyone:
+	nombre es un etiqueta
+20:17:21 From Daniel Maldonado to Everyone:
+	Es una referencia
+20:19:28 From Daniel Maldonado to Everyone:
+	Hay nombres que ayudan mas que otros
+20:19:39 From Daniel Maldonado to Everyone:
+	Utiles / no utiles )?
+20:19:43 From Lorenzo José Lamas to Everyone:
+	Los nombres que supimos construir
+20:20:04 From Pablo Lucero to Everyone:
+	claro, hay nombres mejores/mas utiles/descriptivos que otros
+20:20:11 From Diego Colombo to Everyone:
+	mas o menos representativos
+20:20:15 From Diego Atayra to Everyone:
+	Nuevamente debo retirarme antes de llegar al fin de estos episodios. Gracias por estas charlas tan necesarias para la cultura de nuestra profesión.
+20:20:23 From Diego Colombo to Everyone:
+	bye Diego
+20:20:52 From Ezequiel Birman to Everyone:
+	En algún momento hay que parar. Quien no la haya visto, Growing a Language de Guy Steele https://www.youtube.com/watch?v=lw6TaiXzHAE
+20:21:05 From Pep Diz to Everyone:
+	en la informática sí hay buenos y malos nombres, porque es un ámbito descriptivo, tienes que describir algo existente mediante análogias
+20:21:27 From Pep Diz to Everyone:
+	en otros ámbitos no, porque no puedes describir lo previamente inexistente, lo nuevo
+20:21:30 From Daniel Maldonado to Everyone:
+	Es bueno / util en un momento dado y luego puede que ya no
+20:21:56 From Pep Diz to Everyone:
+	exacto, muy de acuerdo con Leandro
+20:24:44 From Maximiliano Contieri to Everyone:
+	termine de leer https://talks.golang.org/2014/names.slide#16 , tuve que ir al baño
+20:25:11 From Pep Diz to Everyone:
+	pero las teorías de Saussiere ya están superadas ;-)
+20:26:33 From Ezequiel Birman to Everyone:
+	A veces hay que inventar palabras. Cuando Ted Nelson inventó «hipertexto» es porque no le alcanzaba con lo que tenía a mano y también un poco por sagacidad marketinera
+20:27:16 From Juan Vuletich to Everyone:
+	👏
+20:28:57 From Nahuel Ambrosini to Everyone:
+	Nietzsche ya lo dijo en más allá del bien y del mal, construimos nuestra propia moral y la plasmamos a la hora de nombrar variables. Me parece una conclusión hermosa
+20:32:01 From Jorge Luis Canchon Espinosa to Everyone:
+	Bautizamos las variables y este proceso de bautizar muchas veces es lo que mas nos lleva tiempo a la hora de programar.
+20:33:08 From Maximiliano Contieri to Everyone:
+	porque el bautismo es definitivo
+20:33:09 From Omar Huanca to Everyone:
+	Lo interesante asignar un nombre en lenguaje Inglés.
+20:33:13 From Hernan Modrow to Everyone:
+	se viene el Semáforo?
+20:33:40 From Maximiliano Contieri to Everyone:
+	maipu y corrientes
+20:33:49 From Diego Colombo to Everyone:
+	el tema del idioma (ingles, español) hoy en dia toma mucho valor por los equipos multiculturales
+20:34:22 From Maximiliano Contieri to Everyone:
+	todos hablamos ingles y los lenguajes de programacion estan en ingles
+20:34:53 From Jaime Sossa to Everyone:
+	var che = new Person();
+20:34:59 From Jorge Luis Canchon Espinosa to Everyone:
+	Así es, después de dar semantica a un nombre es dificil hallarle otro
+20:35:01 From Daniel Maldonado to Everyone:
+	Si fuera “largo” ya no seria una sintesis
+20:35:09 From Diego Colombo to Everyone:
+	che.camullar(minita)
+20:35:11 From Maximiliano Contieri to Everyone:
+	los nombres largos no son problemas si tenes buenas IDEs
+20:35:25 From Daniel Maldonado to Everyone:
+	CheJs
+20:37:45 From Omar Huanca to Everyone:
+	fonética de un lenguaje. (oral)
+20:38:18 From Ezequiel Birman to Everyone:
+	langue y parole
+20:39:43 From Maximo Prieto to Everyone:
+	Así es, Eze
+20:40:00 From Maximiliano Contieri to Everyone:
+	hablemos de Ursula K Leguin y el TAO
+20:40:42 From Maximiliano Contieri to Everyone:
+	VOTnombresRidiculamenteLargos
+20:41:32 From Daniel Maldonado to Everyone:
+	Una cosa es un texto largo y otra cosa es un texto que acople 3 o 4 conceptos
+20:42:45 From Maximiliano Contieri to Everyone:
+	Borges y los lenguajes Nordicos... desarrolle Maximo
+20:44:28 From Maximiliano Contieri to Everyone:
+	tiene que ser polimorfico con el idioma base
+20:44:29 From Pablo Lucero to Everyone:
+	a mi me terminan quedando largo los nombres de los metodos porque mas de una vez termino poniendo mas o menos que es lo que hace y no encuentro una palabra que lo sintetice
+20:44:39 From Maximiliano Contieri to Everyone:
+	no podes extender un idioma con otro. rompes el polimorfismo
+20:45:06 From Maximiliano Contieri to Everyone:
+	no es un problema poner nombres largos teniendo RENAME automatico
+20:45:49 From Ezequiel Birman to Everyone:
+	I_want_value_four
+20:45:51 From David Gonzalez to Everyone:
+	iWantReTrick
+20:45:57 From Ricardo Mercado Visbal to Everyone:
+	Muy buenas las charlas, los tengo que abandonar por fuerza mayor, luego veo la grabación
+20:46:11 From Diego Colombo to Everyone:
+	Iwantvalue4
+20:47:32 From Ezequiel Birman to Everyone:
+	En el principio fue el verbo
+20:47:42 From Daniel Maldonado to Everyone:
+	“Y dios dijo”
+20:47:57 From Maximo Prieto to Everyone:
+	¿Construimos la realidad?
+20:50:16 From Hernan Modrow to Everyone:
+	No, no, Service no!
+20:50:19 From Federico Iachetti to Everyone:
+	https://www.youtube.com/watch?v=imkT70Upp9M ese video está interesante para hablar del tema de construcción de la realidad a partir de los nombres
+20:50:21 From Hernan Modrow to Everyone:
+	JAJAJA!
+20:50:23 From Maximo Prieto to Everyone:
+	Comienza a aparecer la palabra rol….
+20:51:35 From Maximo Prieto to Everyone:
+	Más que truco deberíamos de Brige, hoy
+20:51:38 From Ezequiel Birman to Everyone:
+	dealer_never_tranza
+20:51:42 From Diego Colombo to Everyone:
+	repartidor de cartas = cartero
+20:51:54 From David Gonzalez to Everyone:
+	jajaja
+20:53:12 From Daniel Maldonado to Everyone:
+	ReceptionistController
+20:53:14 From Daniel Maldonado to Everyone:
+	jaja
+20:53:19 From Lautaro Mei to Everyone:
+	jajaja
+20:53:31 From Juan Carlos Humpiri to Everyone:
+	jajaja
+20:53:32 From Diego Colombo to Everyone:
+	jaja
+20:53:37 From Omar Huanca to Everyone:
+	jajajaaj
+20:53:38 From Cristián Pérez to Everyone:
+	ControllersController
+20:53:44 From Maximiliano Contieri to Everyone:
+	Lugar donde se guardan los hipos: Hipoteca "Quino"
+20:54:07 From Maximiliano Contieri to Everyone:
+	si usas la palabra Helper ====> HayTabla
+20:54:22 From Jorge Luis Canchon Espinosa to Everyone:
+	JAJAJAJA
+20:54:32 From Lorenzo José Lamas to Everyone:
+	Cuando todas las personas que decidieron la analogía no están más en el equipo, es muy complejo
+20:54:34 From Lautaro Mei to Everyone:
+	Gracias!!
+20:54:44 From Hernan Modrow to Everyone:
+	ok, utilizaremos Util en vez de Helper
+20:54:59 From Maximiliano Contieri to Everyone:
+	Si usas una clase como bolsa de funciones ====> HayTabla
+20:55:43 From Daniel Maldonado to Everyone:
+	New Empanada()
+20:56:01 From Maximiliano Contieri to Everyone:
+	Si le pones pasas de uva a las empanadas ====> HayTabla
+20:56:14 From Federico Iachetti to Everyone:
+	Empanada new de: 'carne'
+20:56:16 From Lorenzo José Lamas to Everyone:
+	Empanada.tienePasasDeUva()
+20:56:33 From Cristián Pérez to Everyone:
+	SQLToolkit 😎
+20:56:55 From David Gonzalez to Everyone:
+	tresEmpanadas = [Empanada.new, Empanada.new, Empanada.new]
+20:57:12 From Maximiliano Contieri to Everyone:
+	una miseria digna
+20:57:14 From Hernan Modrow to Everyone:
+	throw new NoPasasDeUvaError()
+20:57:43 From David Gonzalez to Everyone:
+	throw new InvalidIngredient()
+20:57:57 From Omar Huanca to Everyone:
+	jajajajaj
+20:58:12 From Diego Colombo to Everyone:
+	empanadas.count() = 3
+20:59:05 From Leonel Axel Stambul to Everyone:
+	siempre se me genera la duda d como programan en china cuando se tocan estos tema... alguien sabe?
+20:59:22 From Omar Huanca to Everyone:
+	empanada.cantidadEsIgual(3) -> no romper encapsulamiento
+20:59:24 From Jorge Luis Canchon Espinosa to Everyone:
+	Buena pregunta :o
+21:00:35 From Daniel Maldonado to Everyone:
+	Tiene 3 qué esa empanada ?
+21:01:05 From Daniel Maldonado to Everyone:
+	Jajaj 3 empanadas
+21:01:23 From Ezequiel Birman to Everyone:
+	unicode resolvió y creó muchos problemas
+21:01:52 From Pep Diz to Everyone:
+	de hecho muchos proyectos ya incluyen estilos de codificación donde regulan incluso el idioma a usar
+21:01:55 From Santiago Pivetta to Everyone:
+	Usemos esperanto
+21:02:07 From Pep Diz to Everyone:
+	:)   yo eso lo he hecho en ocasiones
+21:02:15 From Pep Diz to Everyone:
+	pero el resultado no fue el esperado ;-)
+21:03:31 From Maximiliano Contieri to Everyone:
+	no estamos hablando de las herramientas que programan por nosotros https://www.youtube.com/watch?v=FQqwynsDs7A
+21:04:24 From Daniel Maldonado to Everyone:
+	Ay pobres estaban en Francia )?
+21:05:06 From Cristián Pérez to Everyone:
+	Totalmente Maximo
+21:05:24 From Pep Diz to Everyone:
+	objetos
+21:05:28 From Maximiliano Contieri to Everyone:
+	nombramos Roles
+21:05:29 From Lorenzo José Lamas to Everyone:
+	Cuando ?
+21:05:48 From Julián Aicardo to Everyone:
+	el rol que cumple en el contexto
+21:06:49 From Diego Colombo to Everyone:
+	clave, el contexto es clave
+21:07:34 From Pep Diz to Everyone:
+	si usamos un patrón debería hacer referencia
+21:07:47 From Pep Diz to Everyone:
+	para identificarlo rápido, a modo de documentación
+21:08:44 From Pep Diz to Everyone:
+	los patrones son parte de la jerga asumida de la que hablaba antes
+21:08:47 From Juan Pablo Ospina Herrera to Everyone:
+	Los patrones de diseño debemos estudiarlos, aprenderlos y olvidarlos.
+21:08:52 From Eduardo Riesco to Everyone:
+	¿Recepcionista o controller?
+21:09:04 From Pep Diz to Everyone:
+	RecepcionistaController   ;-)
+21:09:21 From Daniel Maldonado to Everyone:
+	Había tests como para que expliquen esas metáforas, procesos ?
+21:09:39 From Maximiliano Contieri to Everyone:
+	+1 a los tests
+21:09:46 From Maximiliano Contieri to Everyone:
+	los tests reemplazan a los comentarios
+21:09:47 From Lorenzo José Lamas to Everyone:
+	Había test
+21:09:56 From Lorenzo José Lamas to Everyone:
+	Gente Jr ingresando al team
+21:10:12 From Fabian Diaz to Everyone:
+	+1 para olvidar los patrones de diseño
+21:10:19 From Daniel Maldonado to Everyone:
+	Por ejemplo Hernan siempre dice que el diseño nos tiene que enseñar, en vez de estar dando onboardings
+21:10:23 From Hernan Modrow to Everyone:
+	Docu explicando las metaforas habia?
+21:10:36 From Pablo Lucero to Everyone:
+	si las metaforas eran las mismas del dominio igual las iban a tener que aprender
+21:10:39 From Pep Diz to Everyone:
+	es que muchas veces los patrones son conceptos de implmentacion, no del dominio
+21:11:16 From Maximiliano Contieri to Everyone:
+	un singleton no soluciona nada
+21:11:28 From Pablo Lucero to Everyone:
+	igual estaria bueno algun ejemplo para no andar hablando asi en el aire
+21:12:01 From Maximiliano Contieri to Everyone:
+	singleton en BD => imposible testear
+21:12:47 From Maximiliano Contieri to Everyone:
+	todo patron es "poner un objeto adelante"
+21:13:25 From Diego Colombo to Everyone:
+	Maxi, no te gusta el singleton?
+21:13:26 From Ezequiel Birman to Everyone:
+	Es más elocuente Christopher Alexander que sus epígonos
+21:13:41 From Julián Aicardo to Everyone:
+	The gang of four
+21:13:52 From Maximiliano Contieri to Everyone:
+	el Singleton es un excelente Whisky
+21:14:09 From Diego Colombo to Everyone:
+	no lo probe aun, pero lo tengo en la mira… aun solo jonny walker
+21:14:22 From Julián Aicardo to Everyone:
+	Pat Terna Buser
+21:14:36 From Lorenzo José Lamas to Everyone:
+	+1 al Singleton !
+21:14:51 From Diego Colombo to Everyone:
+	singleton ++ ??
+21:15:31 From Maximiliano Contieri to Everyone:
+	el singleton es la paja mental de los optimizadores prematuros. perdon por el frances
+21:15:40 From Cristián Pérez to Everyone:
+	JAJAJAJAJA
+21:15:52 From Omar Huanca to Everyone:
+	El comportamiento de objeto es un patrón?
+21:17:41 From Lorenzo José Lamas to Everyone:
+	Es tan fácil escribir tickets en jira con nombres de patrones 😛
+21:17:50 From Juan Carlos Humpiri to Everyone:
+	jajaja
+21:18:03 From Diego Colombo to Everyone:
+	Lorenzo pero te los esciben mal esos nombres en los tickets
+21:18:57 From Maximo Prieto to Everyone:
+	Rails nos rompre la estrucrura a todos
+21:19:56 From Maximo Prieto to Everyone:
+	¿Poro o porro?
+21:20:07 From Maximiliano Contieri to Everyone:
+	bean, dto
+21:20:08 From Lorenzo José Lamas to Everyone:
+	Voy al punto que a la hora de escribir tickets (como acto de comunición), son mega útiles los patrones
+21:20:24 From Ezequiel Birman to Everyone:
+	pensé que hablaban de epidermis
+21:20:28 From Maximiliano Contieri to Everyone:
+	poro, bean , dto.. porquerias anemicas
+21:21:06 From Daniel Maldonado to Everyone:
+	Y si quieres hablar con alguien que no es dev ? O que no conoce patrones ? Estas en bolas
+21:22:34 From Juan Vuletich to Everyone:
+	me tengo que ir. gracias a todos!
+21:22:43 From Maximo Prieto to Everyone:
+	Chau juan
+21:22:43 From Diego Colombo to Everyone:
+	suerte JUan
+21:22:44 From Lorenzo José Lamas to Everyone:
+	Para mi es el problema del tradeOff de hablar con jr y hablar con stackholders
+21:23:26 From Maximiliano Contieri to Everyone:
+	como les gustan los singletons :(
+21:23:35 From Lorenzo José Lamas to Everyone:
+	Siento que las metáforas y el ddd apuntan a perfiles sr / stackholders. Pero cuando tenemos que darnos vuelta hay un gap complejo de llenar
+21:23:44 From Cristián Pérez to Everyone:
+	Nos concentramos en hablar de los patrones y de como implementarlos en lugar de hablar del dominio y de como modelarlo
+21:23:59 From Diego Colombo to Everyone:
+	Lorenzo, que podemos hacer para cerrar ese GAP?
+21:24:33 From Lorenzo José Lamas to Everyone:
+	La verdad que no se
+21:25:34 From Daniel Maldonado to Everyone:
+	Muy bueno Facu !
+21:25:37 From Lorenzo José Lamas to Everyone:
+	Veo parches, pero de fondo no encontré todavía la forma de achicar el gap y permitir el ingreso a perfiles que se suman sin tanto poder de abstracción
+21:25:38 From Ezequiel Birman to Everyone:
+	¿y qué pasa si ponemos metadatos en nuestro código explicitando si implementan un patrón?
+21:26:26 From Diego Colombo to Everyone:
+	Muy bueno Facu!!!
+21:26:41 From Fabian Diaz to Everyone:
+	En Golang es para sea publica jajaja
+21:26:55 From Maximiliano Contieri to Everyone:
+	los namespaces agregan contexto y evitan las clases globales. 
+21:26:58 From Pablo Lucero to Everyone:
+	en C# no arrancan con mayuscula los metodos tambien?
+21:27:05 From Maximiliano Contieri to Everyone:
+	las clases globales generan acoplamiento
+21:27:09 From Pep Diz to Everyone:
+	Una posible explicación viene de los lenguajes de binding dinámico como Lisp
+21:27:13 From Diego Colombo to Everyone:
+	Lorenzo, capacitaciones especificas se quedan cortas para los JR?? o qu e otro parche implementaste?
+21:27:17 From Pep Diz to Everyone:
+	para diferenciar variables
+21:27:21 From Fabian Diaz to Everyone:
+	La primera letra en mayúscula en Golang jaaja
+21:27:36 From Pep Diz to Everyone:
+	solia ser habitual nombrar tipos y clases con la primera letra en mayusculas
+21:27:43 From Pep Diz to Everyone:
+	las constantes todo en mayusculas
+21:27:55 From Pep Diz to Everyone:
+	las variables globales comenzando con *
+21:27:57 From Pep Diz to Everyone:
+	etc
+21:28:24 From Maximiliano Contieri to Everyone:
+	si le pones abstract es porque sos muy vago para buscar en el dominio
+21:28:35 From Cristián Pérez to Everyone:
+	ControllerImpl, ServiceImpl 😵‍💫
+21:28:36 From Maximiliano Contieri to Everyone:
+	no es abstractcar. es vehiculo
+21:31:00 From Diego Colombo to Everyone:
+	hungara
+21:31:50 From Maximiliano Contieri to Everyone:
+	para todo el resto... "clean code" de bob martin
+21:32:27 From Diego Colombo to Everyone:
+	excelente Maxi!!
+21:32:40 From Diego Colombo to Everyone:
+	hay unos videos de Bob muy buenos en youtube
+21:33:22 From Daniel Maldonado to Everyone:
+	El dominio del software inunda todo
+21:33:29 From Daniel Maldonado to Everyone:
+	Ofusca todo
+21:33:34 From Diego Colombo to Everyone:
+	metodo masoquista para el sorteo!!
+21:33:47 From Juan Pablo Ospina Herrera to Everyone:
+	+1 masoquista
+21:35:01 From Maximo Prieto to Everyone:
+	No podía faltar Smalltalk
+21:36:11 From Daniel Maldonado to Everyone:
+	El proximo webinar pasamos de las 22 hs )?
+21:36:40 From Gastón Caruso to Everyone:
+	Muy buen cap! 😁
+21:37:09 From Jorge Luis Canchon Espinosa to Everyone:
+	Me ilusione :(
+21:38:23 From Jorge Luis Canchon Espinosa to Everyone:
+	👏
+21:38:42 From Jaime Sossa to Everyone:
+	gran conversación! muchas gracias!
+21:38:51 From Lorenzo José Lamas to Everyone:
+	Hermosa charla !
+21:38:51 From Omar Huanca to Everyone:
+	Muchas gracias.!
+21:38:54 From Nicolas Castaño to Everyone:
+	muchas gracias!
+21:38:56 From Diego Colombo to Everyone:
+	Muchisimas Gracias!!! excelente charla
+21:38:57 From Fabian Diaz to Everyone:
+	Mil gracias
+21:38:58 From Leonel Axel Stambul to Everyone:
+	muy buena charla!!! 
+21:39:05 From Hernan Modrow to Everyone:
+	Muchas gracias!
+21:39:06 From Emmanuel Chang to Everyone:
+	muy buena charla!!
+21:39:11 From Agustin Maler to Everyone:
+	👏
+21:39:22 From Diego De Cristofano to Everyone:
+	Saludos a todos
+21:39:27 From Juan Carlos Humpiri to Everyone:
+	Gracias!!!
+21:39:33 From Juan Carlos Humpiri to Everyone:
+	Saludos a todos.
+21:39:35 From Jorge Luis Canchon Espinosa to Everyone:
+	Muchas gracias a todos
