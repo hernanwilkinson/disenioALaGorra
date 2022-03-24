@@ -1,0 +1,130 @@
+00:08:34	Hernan Wilkinson:	Buenas Noches
+00:09:27	Maximiliano Contieri:	Buenas tardes
+00:10:33	Juan Vuletich:	Perdón, llegué tarde. Quién murió?
+00:10:48	Juan Pablo Ospina Herrera:	Christopher Alexander
+00:11:01	Juan Vuletich:	Ah. Si. Gracias.
+00:11:29	Maximiliano Contieri:	Hermoso code smell disfrazado de feature
+00:13:49	Daniel Maldonado:	Encima sos ignorante ...
+00:15:12	Maximiliano Contieri:	Least surprise principle
+00:15:18	Cristián Pérez:	yo programo en Python y ya sabía que ese comportamiento era así, no digo que este bien, de hecho pienso que no esta bueno, pero al menos no me como el amague jaja
+00:16:32	Lorenzo José Lamas:	Me estaba asustando que suceda en js jajaja
+00:16:38	Fabian Eduardo Diaz Lizcano:	jajajajajaja
+00:16:57	Daniel Maldonado:	Estas optimizando te van a decir
+00:17:02	Daniel Maldonado:	Por que usas 1 solo array
+00:17:03	Daniel Maldonado:	jajaja
+00:17:14	Maximiliano Contieri:	Lo loco es que no lo pueden corregir por todos los abusers
+00:17:41	Maximiliano Contieri:	Pero python depreco todo el lenguaje de 2 a 3 . Podrian hacerlo
+00:18:11	Daniel Maldonado:	Durisimo
+00:18:19	Daniel Maldonado:	No sabia de esa deprecada jaja
+00:23:20	Maximiliano Contieri:	Tus tests te muestran acoplamiento al tiempo. No mates al mensajero
+00:23:55	Lorenzo José Lamas:	No lo mato, pero hasta ahora no pude sortearlo de otra manera :/
+00:31:01	Omar Huanca:	IRV, es para ver el metamodelo de Ruby?
+00:31:15	Maximo Prieto:	IRB
+00:31:26	Maximo Prieto:	Es un real para ruby
+00:31:31	Maximiliano Contieri:	Espero que este hablando del whiskey singleton
+00:31:31	Maximo Prieto:	*repl
+00:32:00	Daniel Maldonado:	Alta idea y vuelta jaja
+00:38:33	Cristián Pérez:	Hermoso Java.......
+00:38:42	Daniel Maldonado:	Te hace laborar
+00:38:45	Daniel Maldonado:	laburar*
+00:40:25	Ezequiel Birman:	¿En Scala pasa lo mismo?
+00:43:31	Facundo Javier Gelatti:	En Scala pasa y no pasa lo mismo (?) porque las clases no son objetos (como en Java), pero se suelen tener objetos que tienen el mismo nombre que las clases (se los llama "companion objects"), y esos sí son objetos propiamente dichos (y es ahí en donde se definen ""métodos de clase"")
+00:44:45	Ezequiel Birman:	¡Gracias!
+00:44:57	Hernan Wilkinson:	<? super Perro>
+00:45:00	Hernan Wilkinson:	me volvi loco
+00:45:01	Hernan Wilkinson:	jaja
+00:45:36	Hernan Modrow:	JS for the win! :-P
+00:45:59	Lorenzo José Lamas:	El this, no se depreco en alguno de los ultimos EMAC ?
+00:46:34	Daniel Maldonado:	El singleton surge como una necesidad al no tener esta capacidad de usar a las classes como objetos ?
+00:56:26	Maximiliano Contieri:	El singleton surge para que los optimizadores prematuros crean que ahorran memoria
+00:56:55	Maximiliano Contieri:	Igual esta en la agenda de hernan. Seguro comenta las razones
+00:58:25	Hernan Wilkinson:	maso menos
+01:01:10	Hernan Wilkinson:	chan!!!
+01:01:24	Maximiliano Contieri:	Me tengo que ir (a vomitar)
+01:01:25	Ricardo Mercado Visbal:	Evil !!!
+01:01:49	Lorenzo José Lamas:	Quien no se haya conectado a una db con un singleton, que tire la primera piedra !
+01:02:08	Fabian Eduardo Diaz Lizcano:	ajjajajajaja
+01:02:13	Cristián Pérez:	Que hay de malo en esto?ModuleControllerHelper.getInstance()
+01:02:35	Maximiliano Contieri:	Acoplamiento
+01:02:55	Maximiliano Contieri:	El nombre igual esta bueno. Ponele Manager
+01:03:21	Cristián Pérez:	ModuleControllerHelperManager.getInstance()
+01:03:42	Daniel Maldonado:	Asi lo educaron pobre, no le peguen
+01:04:07	Cristián Pérez:	Che, igual yo estaba jodiendo, nadie agarro el sarcasmo?
+01:04:09	Hernan Modrow:	te falto Service en algún lugar del nombre..
+01:04:43	Cristián Pérez:	tenes razón
+01:05:31	Juan Pablo Ospina Herrera:	No
+01:05:40	Hernan Wilkinson:	pero no es global
+01:05:59	BrunoM:	no es thread-safe, además :P
+01:06:19	Ignacio Vivona:	No esta creando un DatabaseConfiguration
+01:06:26	davidgonzalez:	No crea una instancia de DatabaseConfiguration
+01:16:54	Maximiliano Contieri:	Cuantos antipatrones juntos!
+01:17:07	Maximiliano Contieri:	Ponete un null y cerramos el boliche
+01:17:36	davidgonzalez:	O podemos modificar con metaprogramacion el getInstance() jajaja
+01:17:38	Lorenzo José Lamas:	Al get instance le mando un parámetro por default con la instancia “de verdad”
+01:17:57	Daniel Maldonado:	Jajaj la posta
+01:18:24	Maximiliano Contieri:	Nada de eso es thread safe
+01:19:15	Cristián Pérez:	Si Singleton es el diablo, un Singleton con setInstance que es?
+01:19:56	Maximiliano Contieri:	Tenes que inicializarlo con null y pones lazy intialization con if
+01:20:34	Daniel Maldonado:	Yo en lo ultimo que vengo laborando creo una instancia de la db en el entry point de la aplicación y se la paso a la aplicación como parámetro
+01:21:01	Daniel Maldonado:	La instancia es única y desde los tests puedo pasar una instancia conveniente que se comporte como una db
+01:22:02	Maximiliano Contieri:	Class new new
+01:22:45	Maximiliano Contieri:	Por que necesitas la bd en tus tests?
+01:23:38	Daniel Maldonado:	Por que se me escapa la tortuga )?
+01:24:17	Maximiliano Contieri:	En logo la tortuga era la protagonista
+01:26:21	Maximo Prieto:	consistente
+01:29:51	Daniel Maldonado:	Complejidad accidental para creerse listo )?
+01:30:13	Nahuel:	Y para seguir teniendo trabajo
+01:30:37	Gastón Caruso:	Son una fiaca esos fwk, al principio me costaba mucho entenderlos y después no podía creer lo poco que te dan y encima te complican el testing.
+01:30:51	Cristián Pérez:	Maximiliano, en testing no pasaba nada porque ambos parámetros recibían implementaciones transient del repositorio, el tema era al inyectar las versiones para producción.
+
+def process(repo_a: ProductsRepository, repo_b: ProductsRepository):
+
+En testing no pasa nada, porque al injector le configuras que devuelva una instancia de TransientRepository
+
+En producción se complicaba, porque repo_a lleva una implementación y repo_b lleva otra, sin embargo como el injector detecta los parametros con la misma clase, no sabe a cual injectarle cada implementación
+01:31:40	Cristián Pérez:	Si usas parametrización es facil, le pasas a cada parametro la implementación correspondiente y se terminó
+01:37:00	Hernan Modrow:	cualquier parecido con la vida real es mera coincidencia.. :-P
+01:44:26	Maximiliano Contieri:	Dijo manager….
+01:45:17	Maximiliano Contieri:	Buenisimo lo del transient
+01:47:19	Daniel Maldonado:	Esta re sensible ese Manager Detector
+01:47:48	Daniel Maldonado:	😛
+01:49:23	Hernan Modrow:	es porque tiene levantado el servicio ManagerDetectorService..
+01:50:58	Maximiliano Contieri:	Intelijeinte
+01:59:54	Ezequiel Birman:	me gustaría tener todos esos refactorings en Emacs
+02:00:04	Hernan Wilkinson:	jajaja
+02:00:05	Hernan Wilkinson:	:D
+02:00:17	Lorenzo José Lamas:	IntelliJ me hace sentir pobre :’(
+02:00:19	Ezequiel Birman:	tengo algunos pero no todos
+02:00:39	Cristián Pérez:	Y usa Intellij jaja
+02:00:56	Ezequiel Birman:	a vece slo uso
+02:01:26	Lorenzo José Lamas:	Hay que mantener consistencia con el resto del team en lo posible para mi ! 😄
+02:02:44	Cristián Pérez:	Pero la consistencia la mantenes con herramientas CLI (linters, formatters, etc etc) que son agnosticas al IDE
+02:03:14	Cristián Pérez:	.editorconfig ayuda también
+02:03:28	Gastón Caruso:	Hacer prairing con distintas ides es difícil
+02:04:23	Ezequiel Birman:	https://github.com/Wilfred/emacs-refactor
+02:05:28	Federico Iachetti:	hola Eze ... que groso eso ... yo usaba una librería para refactorings en Ruby para emacs, pero que dejó de funcionar
+02:05:46	Federico Iachetti:	así que le voy a probar la tuya
+02:05:49	Federico Iachetti:	gracias por compartir
+02:06:26	Ezequiel Birman:	también está https://github.com/emacsorphanage/helm-swoop
+02:06:46	Federico Iachetti:	lo anoto también
+02:06:48	Federico Iachetti:	gracias
+02:07:02	Ezequiel Birman:	En Spacemacs hay una branch que todavía no fue mergeada que tiene muchas cosas para Ruby
+02:07:26	Ezequiel Birman:	https://github.com/syl20bnr/spacemacs/pull/14715
+02:07:44	Ezequiel Birman:	Pero anda muy bien bien, la estoy usando actualmente
+02:08:17	Federico Iachetti:	genial ... no uso Spacemacs, pero seguramente algo podré robar de ahí
+02:09:45	Ezequiel Birman:	https://pragprog.com/titles/atcrime/your-code-as-a-crime-scene/
+02:10:00	Ezequiel Birman:	de Adam Tornhill
+02:10:16	Maximo Prieto:	¿Test o TDD?
+02:10:39	Hernan Wilkinson:	que interesante!!!
+02:12:58	Ezequiel Birman:	¡Gracias Santiago Schuchinsky!
+02:13:09	Ezequiel Birman:	El me donó su 25%
+02:13:59	Fabian Eduardo Diaz Lizcano:	El random tiene un singleton?
+02:14:06	Marcela Charry:	jajajajjaja
+02:14:10	Omar Huanca:	jjaajaj
+02:14:21	Omar Huanca:	Muchas Gracias, me gusto.1
+02:14:30	Fabian Eduardo Diaz Lizcano:	Mil gracias !!!
+02:14:30	Juan carlos Humpiri:	gracias
+02:14:32	Alexander Ezequiel Bálsamo:	Muchas gracias!
+02:14:33	Juan Pablo Ospina Herrera:	Gracais
+02:14:33	Daniel Maldonado:	!!!!!!
+02:14:33	Juan carlos Humpiri:	nos vemos!!!
