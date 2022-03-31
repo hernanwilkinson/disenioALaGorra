@@ -1,253 +1,519 @@
-00:19:27	Maximiliano Contieri:	otra vez el video WAT con javascript absurdo
-00:20:52	Daniel Maldonado:	Mira vos
-00:22:39	Daniel Maldonado:	Jaja ni a palos sabia eso
-00:22:40	Maximiliano Contieri:	no lloren . es una "feature"
-00:22:46	Fabian Eduardo Diaz Lizcano:	jajajajaja
-00:22:49	Jaime Sossa:	aguanta typescript
-00:22:50	Damian Mazzini:	increible
-00:22:50	Ricardo Mercado Visbal:	jajaja
-00:23:00	Fabian Eduardo Diaz Lizcano:	A aprender Smalltalk 🙂
-00:23:01	Jeronimo Carrizo:	lol
-00:23:18	Maximiliano Contieri:	javascript es una mezcla unica de clases y prototipos
-00:23:23	Juan Carlos Humpiri:	no se si quiero llorar
-00:23:27	Juan Carlos Humpiri:	jaja
-00:23:41	Federico Iachetti:	a JavaScript lo definieron en una juntada de DND .... con dados con 1 en todas las caras
-00:24:10	Fernando Laudadio:	Excelente Facu!! no lo sabia!
-00:24:17	Pep Diz:	nada a extrañar en el lenguaje que trajo el hoisting ;-)
-00:24:31	Maximiliano Contieri:	buenisimo Facu. te lo robo para code smell, despues pasame la CBU
-00:25:19	Maximiliano Contieri:	tienen mas syntactic sugar que un diabetico
-00:25:36	Jeronimo Carrizo:	See mall
-00:25:45	Fernando Laudadio:	que seria de javascript con tantos errores, si no le metieran ficha a v8
-00:25:47	Lorenzo José Lamas:	QUe me disculpen, pero en Ruby veo más syntactic sugar ...
-00:26:06	Jeronimo Carrizo:	Ni hablar, labrar con decimales en JS, hermoso!
-00:26:39	Maximiliano Contieri:	eso es un Truthy
-00:26:59	Maximiliano Contieri:	da para hablar de Truthy y Falsy para todo un episodio
-00:27:01	Fabian Eduardo Diaz Lizcano:	Lógica confusa
-00:27:27	Federico Iachetti:	yo creo que quisieron implementar el principio de menor asombro y se equivocaron el símbolo
-00:27:28	Ricardo Mercado Visbal:	incredible
-00:28:55	Jeronimo Carrizo:	Para eso estan los linters rules, a veces nos ayudan
-00:29:10	Hernan Modrow:	Nos da de comer, punto.
-00:31:18	Jeronimo Carrizo:	Notok === no-tocar
-00:31:35	Eduardo Riesco:	no token
-00:31:51	Leandro Linardos:	Not ok
-00:32:47	Joaquin Wojcik:	No son siglas?
-00:32:52	Daniel Maldonado:	Como paso ese PR ?
-00:33:57	Fernando Laudadio:	notok-es un mal nombre
-00:33:59	Leandro Linardos:	noToken ?
-00:34:01	Leandro Linardos:	>_<
-00:34:09	Juan Carlos Humpiri:	-.-
-00:34:10	Ezequiel Birman:	notoken es un mal nombre
-00:34:17	Leandro Linardos:	noauth
-00:34:18	Leandro Linardos:	lol
-00:34:27	Juan Carlos Humpiri:	capas era un programador de cobol
-00:34:31	Juan Carlos Humpiri:	:D
-00:34:58	Jeronimo Carrizo:	Tal vez tenia poca memoria!
-00:34:59	Hernan Modrow:	pobres programadores COBOL..
-00:35:14	Maximo Prieto:	nocom
-00:35:18	Maximiliano Contieri:	la mejor solucion siempre es escribir tests explicitos
-00:35:26	Juan Carlos Humpiri:	jajaja
-00:35:28	Juan Carlos Humpiri:	muy bueno
-00:35:29	Maximiliano Contieri:	ademas del nombre
-00:36:03	Fabian Eduardo Diaz Lizcano:	Eduardo lo hizo
-00:37:17	Fernando Laudadio:	van a tener que incluir etimologia en las carreras
-00:38:24	Juan Carlos Humpiri:	redux
-00:39:25	Cristián Pérez:	Angular ❤️
-00:39:41	Maximo Prieto:	Muy buena la UI
-00:40:06	Eduardo Riesco:	Ugly Interface
-00:48:41	Joaquin Wojcik:	Se entendio
-00:48:46	Ricardo Mercado Visbal:	si
-00:48:47	Braian Gonzales:	Si si
-00:48:48	Jaime Sossa:	el código se documenta solo
-00:54:21	Cristián Pérez:	el problema en este tipo de frameworks no es que crezca el proyecto, sino que crezca los componentes, a veces un componente se encarga de cosas que deberian resolver por separado varios componentes, y toda la logica se simplifica automaticamente
-00:58:37	Jeronimo Carrizo:	En mi experiencia, cuando tenes una vista muy compleja, con muchos observers, y muchos componentes observadores en una misma pagina, es cada vez mas dificil saber cuando cambias algo, todo el impacto en cascada, no es imposible pero es cada vez mas dificil de ver todo el flow.
-00:59:03	Juan Carlos Humpiri:	mas acoplamiento
-01:01:19	Daniel Maldonado:	Y lentos
-01:01:28	Eduardo Riesco:	Framework Driven Development
-01:01:36	Fabian Eduardo Diaz Lizcano:	ajajjajajaja
-01:01:46	Jeronimo Carrizo:	Ni hablar si cambia el framework, se te rompen todos los tests
-01:01:51	Maximo Prieto:	Clap clap leandro
-01:03:11	Jaime Sossa:	Mal ejemplo
-01:03:13	Joaquin Wojcik:	Not ok quizás es un buen nombre para esto
-01:03:15	Pep Diz:	contraejemplo
-01:03:19	Ezequiel Birman:	NOT OK
-01:03:22	Daniel Maldonado:	jajaja
-01:03:27	Cristián Pérez:	tutorial jaja
-01:03:27	Eduardo Riesco:	Vendor lock-in con el framework. Quizá el diseño del "ejemplo" no sea tan casual.
-01:03:29	Fabian Eduardo Diaz Lizcano:	jajajaja
-01:03:34	Leandro Linardos:	Pattern -> antipattern
-01:03:39	Leandro Linardos:	Ejemplo -> contraejemplo
-01:03:44	Juan Carlos Humpiri:	no hay objetos de dominio
-01:03:45	Leandro Linardos:	anti*
-01:03:49	Juan Carlos Humpiri:	con comportamiento
-01:04:53	Jeronimo Carrizo:	Podriamos agregarle TypeScript igual
-01:04:59	Daniel Maldonado:	Habia que salir con la feature
-01:05:27	Hernan Modrow:	agregamos TS y todo se vuelve del tipo any
-01:05:54	Juan Carlos Humpiri:	yo he visto mucho de objetos literales con typescript y tampoco nos da información sobre el comportamiento de los objetos
-01:06:25	Nahuel Garbezza:	https://blog.10pines.com/2021/12/09/a-case-against-nameless-objects/
-01:06:38	Jeronimo Carrizo:	Pero uno puede nombrar los tipos, ahi esta un poquito mejor
-01:06:39	Maximiliano Contieri:	primitive obsession
-01:07:02	Maximo Prieto:	Aguante Juanita
-01:09:57	Maximo Prieto:	Bueno. No todos
-01:10:57	Hernan Modrow:	en Python pasa lo mesmo..
-01:11:19	Maximo Prieto:	Parece sutil lo que dice hernán, pero es esencial
-01:11:44	Maximiliano Contieri:	deberiamos dejar de metaprogramar por 20 años. Luis Barrionuevo
-01:11:47	Maximo Prieto:	NO estamos obligados a cometer los mismos errores que otros
-01:13:36	Fabian Eduardo Diaz Lizcano:	Lo miramos a otro framework 😄
-01:13:40	Pep Diz:	delgar y subcontratar ;-)
-01:13:42	Fabian Eduardo Diaz Lizcano:	+Lo migramos
-01:14:01	Omar Huanca:	subcontratar ......jajjajajj
-01:14:06	Fabian Eduardo Diaz Lizcano:	jajajajaa
-01:14:15	Hernan Modrow:	para eso deberíamos escuchar y entender los errores que cometieron antes que nosotros, no?
-01:14:45	Juan Pablo Ospina Herrera:	Volver a empezar
-01:14:50	Ezequiel Birman:	la web no debería existir
-01:14:57	Fabian Eduardo Diaz Lizcano:	jajajajaja
-01:15:02	Juan Carlos Humpiri:	siempre proponen  hacer test fragiles
-01:15:08	Juan Carlos Humpiri:	a la larga complica
-01:16:03	Hernan Modrow:	que no se te movieran los botones..
-01:16:32	Leandro Linardos:	Ahi empiezan a aparecer los precision 0.99, 0.95, 0.5
-01:20:58	Juan Carlos Humpiri:	crear objetos
-01:20:59	Lucas Moglia:	eificar
-01:20:59	Francisco Jaimes Freyre:	reificar
-01:21:02	Pablo Lucero:	crear abstracciones
-01:22:02	Pep Diz:	que conste que pascal tiene objetos...
-01:22:33	Maximo Prieto:	RES, del latín: cosa. Reificar darle a algo entidad de cosa. En objetos, hacer objeto una cosa de la realidad
-01:22:43	Jeronimo Carrizo:	El proyectos tiene mucha $$ y hay tiempo! je
-01:23:08	Maximiliano Contieri:	no se quejen tanto de los managers. tampoco nos pagan todo el tiempo para hacer frameworks y deuda tecnica. tenemos que entregar valor
-01:23:50	Fabian Eduardo Diaz Lizcano:	jajajaa
-01:24:39	Ariel Dc:	entregar algo sin test mas que entregar valor es entragar algo que esta por cotizar jajaj!!
-01:24:52	Hernan Modrow:	¿Uds le discuten como hacer su trabajo al mecánico, el plomero o el service de la heladera?
-01:26:25	Daniel Maldonado:	Jugadisimo
-01:27:51	Leandro Linardos:	Hay casos en el que “te dan” el tiempo y el problema pasa a ser que el equipo de dev no sabe que hacer y/o lo hace mal. Yo creo que hoy en día la calidad técnica es un flor de cuello de botella en la industria, y es bastante común y cómodo echarle la culpa al PM, al PO, al TL.
-01:28:11	Fabian Eduardo Diaz Lizcano:	De acuerdo
-01:28:16	Hernan Modrow:	+1
-01:28:26	Fabian Eduardo Diaz Lizcano:	Hoy en día los dev se crean en 3 meses
-01:28:42	Daniel Maldonado:	new Dev()
-01:28:43	Jeronimo Carrizo:	+1
-01:28:43	Hernan Modrow:	eso no es nuevo..
-01:28:56	Hernan Modrow:	sólo que ahora es más popular..
-01:29:06	Leandro Linardos:	Hay devs con mucha tiempo en la industria que codean (codeamos? jaja) para el ojete tmb.
-01:29:09	Fabian Eduardo Diaz Lizcano:	Si, por la alta demanda de la industria
-01:29:47	Leandro Linardos:	Mucha experiencia en frameworks, pero muy poco de lo que se habla acá.
-01:29:53	Daniel Maldonado:	El que quiere aprender sobre diseño lo tiene que hacer contra corriente en la mayoria de las empresas y en la facu olvídate tamb
-01:31:47	Hernan Modrow:	en la facu depende de les profes que te toquen..
-01:32:08	Daniel Maldonado:	Si, depende de la suerte supongo como todo en la vida (?
-01:34:00	Leandro Linardos:	Puede q pase por un tema de “exposición” tmb, por mas buenos profes q tengas, los tenes por cuanto? 1 cuatri, 2, 1 año, 2? Dsps pasas años conviviendo con codebases donde de entrada no podes aplicar poco y nada de lo q aprendiste “bien”… las malas juntas como en la escuela! jaja
-01:35:04	Jeronimo Carrizo:	Lo que me gusta a mi en cada laburo que voy son proponer charlas técnicas, y tener una charla semanal ayuda bastante la verdad para seguir mejorando la calidad del código.
-01:37:00	Leandro Linardos:	Science bitch!
-01:37:27	Hernan Modrow:	volvemos al principio, ¿por qué no podemos aplicar las buenas prácticas que conocemos?
-01:38:34	Hernan Modrow:	¿quién nos lo impide? ¿el TL? ¿el Manager? ¿el PO? ¿el PM?
-01:38:46	Hernan Modrow:	¿nuestros pares?
-01:39:04	Leandro Linardos:	La codebase, nuestros pares
-01:40:56	Maximiliano Contieri:	Solo hay dos cosas imposibles en software. Poner nombres e invalidar caches
-01:42:59	Hernan Modrow:	con los pares se puede hacer lo que dice Jeronimo, hacer juntadas para charlar de código y como mejorar la calidad del mismo.. podés atacar problemas de la base de codigo y listo.. liquidaste tus dos problemas..
-01:43:13	Hernan Modrow:	es automático el cambio.. no, pero es un avance..
-01:44:02	Jeronimo Carrizo:	Si, las code reviews son importantísimas tambien
-01:44:18	Leandro Linardos:	Que lindo el prefijo test/pass/refactor en los mensajes de los commits
-01:45:25	Maximo Prieto:	A ver quién se anima a definir el concepto de belleza en programación
-01:45:30	Maximo Prieto:	O en lo que sea
-01:46:09	Pablo Lucero:	simple as possible, but no simpler
-01:46:13	Fabian Eduardo Diaz Lizcano:	Si como oido eso de Golang y lo peor es que muchas empresas ahora se decantan por Golang
-01:46:21	Maximo Prieto:	Hrt
-01:46:24	Maximiliano Contieri:	Golang es una basura. Vengan de a uno
-01:46:29	Maximo Prieto:	Hrtnán se está animando
-01:46:31	Juan Pablo Ospina Herrera:	+1
-01:46:40	Pep Diz:	pero eso es muy relativo
-01:47:19	Pep Diz:	en muchos lenguajes hay idiomas, patrones usuales de como codificar y eso es  bonito, limpio y comprensible para los habituados a ese idioma específico
-01:47:33	Maximiliano Contieri:	Yo puse en linkedin que trabajo en cualquier cosa menos golang. Me escriben los recruiters con curiosidad porque no lo entienden
-01:47:57	Fabian Eduardo Diaz Lizcano:	jajajajajajaj
-01:48:30	Maximiliano Contieri:	Bancamos a unclebob . No lo cancelen
-01:49:19	Pep Diz:	eso es un buen ejemplo, Chuck decía que NO se deben usar variables locales que solo se deberían usar variables globales, las locales son un error
-01:49:28	Pep Diz:	y mira por donde fuimos todos después ;-)
-01:49:29	Ezequiel Birman:	críptico para el que recién empieza porque es muy diferente pero los que lo usan lo adoran
-01:49:38	Hernan Modrow:	Canceladísimo, hay muchos otros referentes para seguir.
-01:49:54	Leandro Linardos:	Escuché por ahí q cierto placer de escuchar música viene por el lado de poder “predecir y acertar” como sigue esa pieza musical
-01:49:55	Maximiliano Contieri:	Aca somos uncles’s army
-01:50:11	Leonardo Giorcelli:	Hay q separar la obra del artista XD
-01:50:21	Eduardo Riesco:	Código bello = conversación con un amigo. 
-La conversacione avanza fácil y estamos razonablemente de acuerdo en nuestra visión del mundo.
-01:50:23	Diego De Cristofano:	Cual es el tema con el uncle Bob?
-01:50:41	Leandro Linardos:	Que no hace lo que predica >_<
-01:50:46	Ezequiel Birman:	@Leandro hay una dialéctica si me disculpás la palabra. En un extremo tenés algo demasiado predecible y en el otro el cambio constante.
-01:50:51	Maximiliano Contieri:	Sos opiniones politicas
-01:51:37	Jeronimo Carrizo:	La verdad que yo saque mucho de Uncle bob, pero saco de varios lados mas, me quedo con lo que me cuadra
-01:54:06	Fabian Eduardo Diaz Lizcano:	Es complejo cuando no tienes ejemplos como los que nos ha enseñado hernán y cuando no sabes si eso realmente es mantenible en el tiempo
-01:55:40	Pep Diz:	pues a mi eso que acaba de decir Hernan me parece un error,  el programador NO es el que tiene que nombrar los objetos del dominio porque generalmente no los conoce y la aproximación que hace está sesgada o es parcial, debería hacerse en conjunto con la parte funcional usuaria del dominio
-01:56:37	Lorenzo José Lamas:	Como que no es habitable !
-01:56:50	Hernan Modrow:	Pabellón 1 es mágico..
-01:57:34	Jeronimo Carrizo:	Cuando ves lindo código, es parecido a ver un hermoso cuadro. Creo que es lo que me hizo enamorar esta profesión.
-01:58:25	Eduardo Riesco:	Programar es conversar. La habitabilidad de la conversación está en el entendimiento.
-01:58:46	Maximo Prieto:	Coincido, Eduardo
-02:00:38	Hernan Modrow:	a mi me gusta pensar en cuanta disonancia cognitiva me produce mirar el código (qué tan difícil es mirarlo un rato y entender que hace sin que te canse mentalmente)
-02:01:12	Maximo Prieto:	Buen punto
-02:01:39	Maximo Prieto:	Tiene que ser comprensible a primera lectura
-02:03:34	Leandro Linardos:	Por ahi va por el negativo: algo es bello cuando no tiene nada que no te guste, te moleste, te incomode
-02:04:00	Daniel Maldonado:	Claro, no es que sea lindo, sino que no tiene nada feo jaja
-02:04:21	Lorenzo José Lamas:	Mi métrica personal, va en la dificultad del contexto switch. Si estoy con otra cosa, cuanto me cuesta ponerme en sintonía con ese código
-02:04:52	Leandro Linardos:	Ese listado de commits es bello 🎨
-02:04:57	Pablo Andres Beroiza:	lo bello va cuando aumentas la legibilidad y reducir la complejidad del código
-02:05:33	Maximo Prieto:	Según la métrica de Leandro Linares una serie básica de Netflix sería bella. No está mal, pero no me alcanza
-02:06:24	Maximo Prieto:	Hay muchos programadores que disfrutan de la complejidad de código, Pablo
-02:06:39	Maximo Prieto:	No está bueno, pero les gusta
-02:06:49	Maximo Prieto:	¿Será bello?
-02:06:51	Pablo Andres Beroiza:	serán masoquistas
-02:07:06	Leandro Linardos:	pero una serie básica de Netflix molesta por lo básica q es 🤔
-02:07:07	Jaime Sossa:	belleza sería que este sonriendo por que entiendes lo que lees y no tener ganas de hacerle algo malo a quien lo escribió.
-02:07:27	Maximo Prieto:	No me molesta lo básico
-02:07:41	Maximo Prieto:	Muchas veces me gusta
-02:08:04	Maximiliano Contieri:	Dtos
-02:08:07	Maximiliano Contieri:	Beans
-02:08:08	Maximo Prieto:	Me gusta tu espíritu, Jaime
-02:08:17	Leandro Linardos:	Entiendo, y que sería lo q no alcanza de la sería básica de Netflix? Q le falta?
-02:08:23	Pablo Lucero:	mas que pensar el codigo en terminos de belleza me parece mas util pensar que esta bien diseñado. Un buen diseño tiene que ser util antes que bello. Si es bello mejor, pero si es bello pero no es util/resuleve bien para lo que fue hecho, no va
-02:09:43	Maximo Prieto:	A ver, Leandro L., le falta detalle
-02:09:50	Maximo Prieto:	desarrollo
-02:10:00	Maximo Prieto:	Pero me sirve
-02:11:05	Hernan Modrow:	porque los FEs y BEs son enemigos naturales.. (?
-02:11:27	Daniel Maldonado:	Una lib aparte para dominio de negocio
-02:12:29	Daniel Maldonado:	“Asi estaba en el ejemplo de la docu” me han dicho
-02:12:39	Leandro Linardos:	“Asi anda”
-02:12:51	Leandro Linardos:	"(Hoy)"
-02:13:19	Leonardo Giorcelli:	Pasa q no siempre es fácil romper la costumbre o el paradigma mas usado, a veces no te imaginas que algo se puede hacer mejor, porque te falta conocimiento
-02:13:20	Hernan Modrow:	volvemos al inicio, nos faltan buenos ejemplos
-02:13:40	Pep Diz:	ahí no hay dilema, siempre inmutable! ;-)
-02:14:20	Fabian Eduardo Diaz Lizcano:	jajajajaja
-02:14:35	Christian Contarino:	Muy pocas veces casi nunca se usa
-02:14:54	Maximiliano Contieri:	Agunate el blockchain
-02:16:12	Leandro Linardos:	Yo creo que es una cuestión natural de aprender, si hoy sabes mas que ayer, seguramente mañana sepas más que hoy. En el momento que te “casaste” con que lo que tenes hoy es lo mejor (y te olvidaste que lo tenias antes tmb ERA lo mejor), dejaste de aprender.
-02:16:31	Leandro Linardos:	No nos gusta el cambio >_<
-02:16:53	Maximiliano Contieri:	Programacion funcional. Belleza
-02:19:38	Pep Diz:	pero hay diferentes formas de modelar la mutabilidad
-02:19:49	Pep Diz:	y puedes modelarlo con objetos inmutables
-02:20:25	Eduardo Riesco:	nunca me baño ene el mismo objeto
-02:20:31	Fabian Eduardo Diaz Lizcano:	jajajaajaja
-02:20:32	Alexander Ezequiel Bálsamo:	jajajaa
-02:20:41	Pep Diz:	es decir, que es también una cuestión técnica, no sólo de dominio de problema
-02:22:54	Maximiliano Contieri:	Y acoplado
-02:24:35	Jeronimo Carrizo:	Tal vez estaría bueno tener edificado el obj Inventariado. Y que el inventariado conoce el stock
-02:25:12	Jeronimo Carrizo:	Y un SuperMarket tiene una referencia a Inventariado.
-02:27:31	Ezequiel Birman:	Gracias Hernán por expresar lo que yo no hubiera podido
-02:28:29	Maximiliano Contieri:	Muy buenooooo
-02:28:37	Fabian Eduardo Diaz Lizcano:	Grande Hernan, muchas gracias por compartir
-02:28:51	Fabian Eduardo Diaz Lizcano:	👏
-02:29:19	Daniel Maldonado:	Para el back postman / insomnia
-02:29:29	Leandro Linardos:	Una bofetada a lo Will Smith al “no hago tdd xq hago frontend”
-02:29:46	Ricardo Mercado Visbal:	genial el ejemplo !!!
-02:29:53	Leandro Linardos:	“No TESTEO xq hago frontend"
-02:29:56	Maximiliano Contieri:	Manden memes
-02:31:35	Leandro Linardos:	https://imgflip.com/i/6asdaf
-02:34:56	Hernan Modrow:	por qué se llama Carrito?
-02:35:06	Daniel Maldonado:	Changuito
-02:40:19	Hernan Modrow:	hermoso ejemplo
-02:40:27	Lorenzo José Lamas:	La verdad que si !
-02:43:40	Diego De Cristofano:	Se puede pasar el repo hoy?
-02:43:50	Daniel Maldonado:	Si, eso
-02:44:49	Pep Diz:	muy buena charla, lo disfruto mucho como ya viene siendo habitual, gracias a todos
-02:45:20	Juan Carlos Humpiri:	pueden pasar el canal slack?
-02:45:31	Juan Carlos Humpiri:	para poder charlar
-02:46:20	Omar Huanca:	Genial, gracias.!
-02:46:21	Leandro Linardos:	Muy bueno!
-02:46:24	Leandro Linardos:	gracias!
-02:46:31	Fabian Eduardo Diaz Lizcano:	Muchas gracias !!!!
-02:46:36	Jeronimo Carrizo:	Nuuu q no se corte!!!
-02:46:38	Ricardo Mercado Visbal:	Muchas gracias
-02:46:39	Nicolas Castaño:	muchas gracias!
+19:00:53 From Maximiliano Contieri to Everyone:
+	buenas !
+19:01:04 From Juan Carlos Humpiri to Everyone:
+	Buenas noches!!!
+19:01:47 From Pep Diz to Everyone:
+	buenas!
+19:01:51 From Pep Diz to Everyone:
+	saludos nocturnos
+19:02:32 From Pablo Andres Beroiza to Everyone:
+	buenas a todos!
+19:03:03 From Federico Iachetti to Everyone:
+	hola gente
+19:03:22 From Maximiliano Contieri to Everyone:
+	yo le botoneo todo
+19:08:35 From Maximiliano Contieri to Everyone:
+	otra vez el video WAT con javascript absurdo
+19:09:59 From Daniel Maldonado to Everyone:
+	Mira vos
+19:11:47 From Daniel Maldonado to Everyone:
+	Jaja ni a palos sabia eso
+19:11:48 From Maximiliano Contieri to Everyone:
+	no lloren . es una "feature"
+19:11:53 From Fabian Eduardo Diaz Lizcano to Everyone:
+	jajajajaja
+19:11:57 From Jaime Sossa to Everyone:
+	aguanta typescript
+19:11:57 From Damian Mazzini to Everyone:
+	increible
+19:11:58 From Ricardo Mercado Visbal to Everyone:
+	jajaja
+19:12:08 From Fabian Eduardo Diaz Lizcano to Everyone:
+	A aprender Smalltalk 🙂
+19:12:09 From Jeronimo Carrizo to Everyone:
+	lol
+19:12:26 From Maximiliano Contieri to Everyone:
+	javascript es una mezcla unica de clases y prototipos
+19:12:31 From Juan Carlos Humpiri to Everyone:
+	no se si quiero llorar
+19:12:35 From Juan Carlos Humpiri to Everyone:
+	jaja
+19:12:49 From Federico Iachetti to Everyone:
+	a JavaScript lo definieron en una juntada de DND .... con dados con 1 en todas las caras
+19:13:17 From Fernando Laudadio to Everyone:
+	Excelente Facu!! no lo sabia!
+19:13:25 From Pep Diz to Everyone:
+	nada a extrañar en el lenguaje que trajo el hoisting ;-)
+19:13:39 From Maximiliano Contieri to Everyone:
+	buenisimo Facu. te lo robo para code smell, despues pasame la CBU
+19:14:27 From Maximiliano Contieri to Everyone:
+	tienen mas syntactic sugar que un diabetico
+19:14:44 From Jeronimo Carrizo to Everyone:
+	See mall
+19:14:53 From Fernando Laudadio to Everyone:
+	que seria de javascript con tantos errores, si no le metieran ficha a v8
+19:14:55 From Lorenzo José Lamas to Everyone:
+	QUe me disculpen, pero en Ruby veo más syntactic sugar ...
+19:15:14 From Jeronimo Carrizo to Everyone:
+	Ni hablar, labrar con decimales en JS, hermoso!
+19:15:47 From Maximiliano Contieri to Everyone:
+	eso es un Truthy
+19:16:06 From Maximiliano Contieri to Everyone:
+	da para hablar de Truthy y Falsy para todo un episodio
+19:16:09 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Lógica confusa
+19:16:34 From Federico Iachetti to Everyone:
+	yo creo que quisieron implementar el principio de menor asombro y se equivocaron el símbolo
+19:16:36 From Ricardo Mercado Visbal to Everyone:
+	incredible
+19:18:03 From Jeronimo Carrizo to Everyone:
+	Para eso estan los linters rules, a veces nos ayudan
+19:18:18 From Hernan Modrow to Everyone:
+	Nos da de comer, punto.
+19:20:26 From Jeronimo Carrizo to Everyone:
+	Notok === no-tocar
+19:20:43 From Eduardo Riesco to Everyone:
+	no token
+19:20:59 From Leandro Linardos to Everyone:
+	Not ok
+19:21:54 From Joaquin Wojcik to Everyone:
+	No son siglas?
+19:22:00 From Daniel Maldonado to Everyone:
+	Como paso ese PR ?
+19:23:05 From Fernando Laudadio to Everyone:
+	notok-es un mal nombre
+19:23:07 From Leandro Linardos to Everyone:
+	noToken ?
+19:23:09 From Leandro Linardos to Everyone:
+	>_<
+19:23:17 From Juan Carlos Humpiri to Everyone:
+	-.-
+19:23:18 From Ezequiel Birman to Everyone:
+	notoken es un mal nombre
+19:23:24 From Leandro Linardos to Everyone:
+	noauth
+19:23:26 From Leandro Linardos to Everyone:
+	lol
+19:23:34 From Juan Carlos Humpiri to Everyone:
+	capas era un programador de cobol
+19:23:38 From Juan Carlos Humpiri to Everyone:
+	:D
+19:24:05 From Jeronimo Carrizo to Everyone:
+	Tal vez tenia poca memoria!
+19:24:06 From Hernan Modrow to Everyone:
+	pobres programadores COBOL..
+19:24:22 From Maximo Prieto to Everyone:
+	nocom
+19:24:25 From Maximiliano Contieri to Everyone:
+	la mejor solucion siempre es escribir tests explicitos
+19:24:33 From Juan Carlos Humpiri to Everyone:
+	jajaja
+19:24:36 From Juan Carlos Humpiri to Everyone:
+	muy bueno
+19:24:37 From Maximiliano Contieri to Everyone:
+	ademas del nombre
+19:25:10 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Eduardo lo hizo
+19:26:25 From Fernando Laudadio to Everyone:
+	van a tener que incluir etimologia en las carreras
+19:27:32 From Juan Carlos Humpiri to Everyone:
+	redux
+19:28:33 From Cristián Pérez to Everyone:
+	Angular ❤️
+19:28:49 From Maximo Prieto to Everyone:
+	Muy buena la UI
+19:29:13 From Eduardo Riesco to Everyone:
+	Ugly Interface
+19:37:49 From Joaquin Wojcik to Everyone:
+	Se entendio
+19:37:53 From Ricardo Mercado Visbal to Everyone:
+	si
+19:37:56 From Braian Gonzales to Everyone:
+	Si si
+19:37:56 From Jaime Sossa to Everyone:
+	el código se documenta solo
+19:43:29 From Cristián Pérez to Everyone:
+	el problema en este tipo de frameworks no es que crezca el proyecto, sino que crezca los componentes, a veces un componente se encarga de cosas que deberian resolver por separado varios componentes, y toda la logica se simplifica automaticamente
+19:47:44 From Jeronimo Carrizo to Everyone:
+	En mi experiencia, cuando tenes una vista muy compleja, con muchos observers, y muchos componentes observadores en una misma pagina, es cada vez mas dificil saber cuando cambias algo, todo el impacto en cascada, no es imposible pero es cada vez mas dificil de ver todo el flow.
+19:48:10 From Juan Carlos Humpiri to Everyone:
+	mas acoplamiento
+19:50:27 From Daniel Maldonado to Everyone:
+	Y lentos
+19:50:35 From Eduardo Riesco to Everyone:
+	Framework Driven Development
+19:50:44 From Fabian Eduardo Diaz Lizcano to Everyone:
+	ajajjajajaja
+19:50:53 From Jeronimo Carrizo to Everyone:
+	Ni hablar si cambia el framework, se te rompen todos los tests
+19:50:59 From Maximo Prieto to Everyone:
+	Clap clap leandro
+19:52:19 From Jaime Sossa to Everyone:
+	Mal ejemplo
+19:52:20 From Joaquin Wojcik to Everyone:
+	Not ok quizás es un buen nombre para esto
+19:52:23 From Pep Diz to Everyone:
+	contraejemplo
+19:52:27 From Ezequiel Birman to Everyone:
+	NOT OK
+19:52:30 From Daniel Maldonado to Everyone:
+	jajaja
+19:52:35 From Cristián Pérez to Everyone:
+	tutorial jaja
+19:52:35 From Eduardo Riesco to Everyone:
+	Vendor lock-in con el framework. Quizá el diseño del "ejemplo" no sea tan casual.
+19:52:37 From Fabian Eduardo Diaz Lizcano to Everyone:
+	jajajaja
+19:52:42 From Leandro Linardos to Everyone:
+	Pattern -> antipattern
+19:52:47 From Leandro Linardos to Everyone:
+	Ejemplo -> contraejemplo
+19:52:52 From Juan Carlos Humpiri to Everyone:
+	no hay objetos de dominio
+19:52:53 From Leandro Linardos to Everyone:
+	anti*
+19:52:56 From Juan Carlos Humpiri to Everyone:
+	con comportamiento
+19:54:01 From Jeronimo Carrizo to Everyone:
+	Podriamos agregarle TypeScript igual
+19:54:06 From Daniel Maldonado to Everyone:
+	Habia que salir con la feature
+19:54:34 From Hernan Modrow to Everyone:
+	agregamos TS y todo se vuelve del tipo any
+19:55:01 From Juan Carlos Humpiri to Everyone:
+	yo he visto mucho de objetos literales con typescript y tampoco nos da información sobre el comportamiento de los objetos
+19:55:33 From Nahuel Garbezza to Everyone:
+	https://blog.10pines.com/2021/12/09/a-case-against-nameless-objects/
+19:55:45 From Jeronimo Carrizo to Everyone:
+	Pero uno puede nombrar los tipos, ahi esta un poquito mejor
+19:55:46 From Maximiliano Contieri to Everyone:
+	primitive obsession
+19:56:10 From Maximo Prieto to Everyone:
+	Aguante Juanita
+19:59:05 From Maximo Prieto to Everyone:
+	Bueno. No todos
+20:00:04 From Hernan Modrow to Everyone:
+	en Python pasa lo mesmo..
+20:00:27 From Maximo Prieto to Everyone:
+	Parece sutil lo que dice hernán, pero es esencial
+20:00:52 From Maximiliano Contieri to Everyone:
+	deberiamos dejar de metaprogramar por 20 años. Luis Barrionuevo
+20:00:55 From Maximo Prieto to Everyone:
+	NO estamos obligados a cometer los mismos errores que otros
+20:02:43 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Lo miramos a otro framework 😄
+20:02:47 From Pep Diz to Everyone:
+	delgar y subcontratar ;-)
+20:02:49 From Fabian Eduardo Diaz Lizcano to Everyone:
+	+Lo migramos
+20:03:09 From Omar Huanca to Everyone:
+	subcontratar ......jajjajajj
+20:03:13 From Fabian Eduardo Diaz Lizcano to Everyone:
+	jajajajaa
+20:03:22 From Hernan Modrow to Everyone:
+	para eso deberíamos escuchar y entender los errores que cometieron antes que nosotros, no?
+20:03:53 From Juan Pablo Ospina Herrera to Everyone:
+	Volver a empezar
+20:03:57 From Ezequiel Birman to Everyone:
+	la web no debería existir
+20:04:05 From Fabian Eduardo Diaz Lizcano to Everyone:
+	jajajajaja
+20:04:10 From Juan Carlos Humpiri to Everyone:
+	siempre proponen  hacer test fragiles
+20:04:15 From Juan Carlos Humpiri to Everyone:
+	a la larga complica
+20:05:11 From Hernan Modrow to Everyone:
+	que no se te movieran los botones..
+20:05:40 From Leandro Linardos to Everyone:
+	Ahi empiezan a aparecer los precision 0.99, 0.95, 0.5
+20:10:05 From Juan Carlos Humpiri to Everyone:
+	crear objetos
+20:10:07 From Lucas Moglia to Everyone:
+	eificar
+20:10:07 From Francisco Jaimes Freyre to Everyone:
+	reificar
+20:10:09 From Pablo Lucero to Everyone:
+	crear abstracciones
+20:11:09 From Pep Diz to Everyone:
+	que conste que pascal tiene objetos...
+20:11:41 From Maximo Prieto to Everyone:
+	RES, del latín: cosa. Reificar darle a algo entidad de cosa. En objetos, hacer objeto una cosa de la realidad
+20:11:50 From Jeronimo Carrizo to Everyone:
+	El proyectos tiene mucha $$ y hay tiempo! je
+20:12:15 From Maximiliano Contieri to Everyone:
+	no se quejen tanto de los managers. tampoco nos pagan todo el tiempo para hacer frameworks y deuda tecnica. tenemos que entregar valor
+20:12:57 From Fabian Eduardo Diaz Lizcano to Everyone:
+	jajajaa
+20:13:47 From Ariel Dc to Everyone:
+	entregar algo sin test mas que entregar valor es entragar algo que esta por cotizar jajaj!!
+20:13:59 From Hernan Modrow to Everyone:
+	¿Uds le discuten como hacer su trabajo al mecánico, el plomero o el service de la heladera?
+20:15:32 From Daniel Maldonado to Everyone:
+	Jugadisimo
+20:16:59 From Leandro Linardos to Everyone:
+	Hay casos en el que “te dan” el tiempo y el problema pasa a ser que el equipo de dev no sabe que hacer y/o lo hace mal. Yo creo que hoy en día la calidad técnica es un flor de cuello de botella en la industria, y es bastante común y cómodo echarle la culpa al PM, al PO, al TL.
+20:17:19 From Fabian Eduardo Diaz Lizcano to Everyone:
+	De acuerdo
+20:17:23 From Hernan Modrow to Everyone:
+	+1
+20:17:33 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Hoy en día los dev se crean en 3 meses
+20:17:49 From Daniel Maldonado to Everyone:
+	new Dev()
+20:17:50 From Jeronimo Carrizo to Everyone:
+	+1
+20:17:51 From Hernan Modrow to Everyone:
+	eso no es nuevo..
+20:18:04 From Hernan Modrow to Everyone:
+	sólo que ahora es más popular..
+20:18:13 From Leandro Linardos to Everyone:
+	Hay devs con mucha tiempo en la industria que codean (codeamos? jaja) para el ojete tmb.
+20:18:16 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Si, por la alta demanda de la industria
+20:18:55 From Leandro Linardos to Everyone:
+	Mucha experiencia en frameworks, pero muy poco de lo que se habla acá.
+20:19:00 From Daniel Maldonado to Everyone:
+	El que quiere aprender sobre diseño lo tiene que hacer contra corriente en la mayoria de las empresas y en la facu olvídate tamb
+20:20:54 From Hernan Modrow to Everyone:
+	en la facu depende de les profes que te toquen..
+20:21:15 From Daniel Maldonado to Everyone:
+	Si, depende de la suerte supongo como todo en la vida (?
+20:23:08 From Leandro Linardos to Everyone:
+	Puede q pase por un tema de “exposición” tmb, por mas buenos profes q tengas, los tenes por cuanto? 1 cuatri, 2, 1 año, 2? Dsps pasas años conviviendo con codebases donde de entrada no podes aplicar poco y nada de lo q aprendiste “bien”… las malas juntas como en la escuela! jaja
+20:24:11 From Jeronimo Carrizo to Everyone:
+	Lo que me gusta a mi en cada laburo que voy son proponer charlas técnicas, y tener una charla semanal ayuda bastante la verdad para seguir mejorando la calidad del código.
+20:26:08 From Leandro Linardos to Everyone:
+	Science bitch!
+20:26:35 From Hernan Modrow to Everyone:
+	volvemos al principio, ¿por qué no podemos aplicar las buenas prácticas que conocemos?
+20:27:42 From Hernan Modrow to Everyone:
+	¿quién nos lo impide? ¿el TL? ¿el Manager? ¿el PO? ¿el PM?
+20:27:53 From Hernan Modrow to Everyone:
+	¿nuestros pares?
+20:28:11 From Leandro Linardos to Everyone:
+	La codebase, nuestros pares
+20:30:04 From Maximiliano Contieri to Everyone:
+	Solo hay dos cosas imposibles en software. Poner nombres e invalidar caches
+20:32:06 From Hernan Modrow to Everyone:
+	con los pares se puede hacer lo que dice Jeronimo, hacer juntadas para charlar de código y como mejorar la calidad del mismo.. podés atacar problemas de la base de codigo y listo.. liquidaste tus dos problemas..
+20:32:20 From Hernan Modrow to Everyone:
+	es automático el cambio.. no, pero es un avance..
+20:33:09 From Jeronimo Carrizo to Everyone:
+	Si, las code reviews son importantísimas tambien
+20:33:26 From Leandro Linardos to Everyone:
+	Que lindo el prefijo test/pass/refactor en los mensajes de los commits
+20:34:32 From Maximo Prieto to Everyone:
+	A ver quién se anima a definir el concepto de belleza en programación
+20:34:38 From Maximo Prieto to Everyone:
+	O en lo que sea
+20:35:16 From Pablo Lucero to Everyone:
+	simple as possible, but no simpler
+20:35:20 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Si como oido eso de Golang y lo peor es que muchas empresas ahora se decantan por Golang
+20:35:28 From Maximo Prieto to Everyone:
+	Hrt
+20:35:32 From Maximiliano Contieri to Everyone:
+	Golang es una basura. Vengan de a uno
+20:35:36 From Maximo Prieto to Everyone:
+	Hrtnán se está animando
+20:35:38 From Juan Pablo Ospina Herrera to Everyone:
+	+1
+20:35:48 From Pep Diz to Everyone:
+	pero eso es muy relativo
+20:36:26 From Pep Diz to Everyone:
+	en muchos lenguajes hay idiomas, patrones usuales de como codificar y eso es  bonito, limpio y comprensible para los habituados a ese idioma específico
+20:36:41 From Maximiliano Contieri to Everyone:
+	Yo puse en linkedin que trabajo en cualquier cosa menos golang. Me escriben los recruiters con curiosidad porque no lo entienden
+20:37:05 From Fabian Eduardo Diaz Lizcano to Everyone:
+	jajajajajajaj
+20:37:37 From Maximiliano Contieri to Everyone:
+	Bancamos a unclebob . No lo cancelen
+20:38:26 From Pep Diz to Everyone:
+	eso es un buen ejemplo, Chuck decía que NO se deben usar variables locales que solo se deberían usar variables globales, las locales son un error
+20:38:35 From Pep Diz to Everyone:
+	y mira por donde fuimos todos después ;-)
+20:38:36 From Ezequiel Birman to Everyone:
+	críptico para el que recién empieza porque es muy diferente pero los que lo usan lo adoran
+20:38:46 From Hernan Modrow to Everyone:
+	Canceladísimo, hay muchos otros referentes para seguir.
+20:39:01 From Leandro Linardos to Everyone:
+	Escuché por ahí q cierto placer de escuchar música viene por el lado de poder “predecir y acertar” como sigue esa pieza musical
+20:39:03 From Maximiliano Contieri to Everyone:
+	Aca somos uncles’s army
+20:39:19 From Leonardo Giorcelli to Everyone:
+	Hay q separar la obra del artista XD
+20:39:29 From Eduardo Riesco to Everyone:
+	Código bello = conversación con un amigo. 
+	La conversacione avanza fácil y estamos razonablemente de acuerdo en nuestra visión del mundo.
+20:39:31 From Diego De Cristofano to Everyone:
+	Cual es el tema con el uncle Bob?
+20:39:49 From Leandro Linardos to Everyone:
+	Que no hace lo que predica >_<
+20:39:53 From Ezequiel Birman to Everyone:
+	@Leandro hay una dialéctica si me disculpás la palabra. En un extremo tenés algo demasiado predecible y en el otro el cambio constante.
+20:39:58 From Maximiliano Contieri to Everyone:
+	Sos opiniones politicas
+20:40:44 From Jeronimo Carrizo to Everyone:
+	La verdad que yo saque mucho de Uncle bob, pero saco de varios lados mas, me quedo con lo que me cuadra
+20:43:13 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Es complejo cuando no tienes ejemplos como los que nos ha enseñado hernán y cuando no sabes si eso realmente es mantenible en el tiempo
+20:44:47 From Pep Diz to Everyone:
+	pues a mi eso que acaba de decir Hernan me parece un error,  el programador NO es el que tiene que nombrar los objetos del dominio porque generalmente no los conoce y la aproximación que hace está sesgada o es parcial, debería hacerse en conjunto con la parte funcional usuaria del dominio
+20:45:45 From Lorenzo José Lamas to Everyone:
+	Como que no es habitable !
+20:45:58 From Hernan Modrow to Everyone:
+	Pabellón 1 es mágico..
+20:46:41 From Jeronimo Carrizo to Everyone:
+	Cuando ves lindo código, es parecido a ver un hermoso cuadro. Creo que es lo que me hizo enamorar esta profesión.
+20:47:33 From Eduardo Riesco to Everyone:
+	Programar es conversar. La habitabilidad de la conversación está en el entendimiento.
+20:47:54 From Maximo Prieto to Everyone:
+	Coincido, Eduardo
+20:49:46 From Hernan Modrow to Everyone:
+	a mi me gusta pensar en cuanta disonancia cognitiva me produce mirar el código (qué tan difícil es mirarlo un rato y entender que hace sin que te canse mentalmente)
+20:50:20 From Maximo Prieto to Everyone:
+	Buen punto
+20:50:46 From Maximo Prieto to Everyone:
+	Tiene que ser comprensible a primera lectura
+20:52:42 From Leandro Linardos to Everyone:
+	Por ahi va por el negativo: algo es bello cuando no tiene nada que no te guste, te moleste, te incomode
+20:53:08 From Daniel Maldonado to Everyone:
+	Claro, no es que sea lindo, sino que no tiene nada feo jaja
+20:53:29 From Lorenzo José Lamas to Everyone:
+	Mi métrica personal, va en la dificultad del contexto switch. Si estoy con otra cosa, cuanto me cuesta ponerme en sintonía con ese código
+20:54:00 From Leandro Linardos to Everyone:
+	Ese listado de commits es bello 🎨
+20:54:04 From Pablo Andres Beroiza to Everyone:
+	lo bello va cuando aumentas la legibilidad y reducir la complejidad del código
+20:54:40 From Maximo Prieto to Everyone:
+	Según la métrica de Leandro Linares una serie básica de Netflix sería bella. No está mal, pero no me alcanza
+20:55:31 From Maximo Prieto to Everyone:
+	Hay muchos programadores que disfrutan de la complejidad de código, Pablo
+20:55:47 From Maximo Prieto to Everyone:
+	No está bueno, pero les gusta
+20:55:57 From Maximo Prieto to Everyone:
+	¿Será bello?
+20:55:59 From Pablo Andres Beroiza to Everyone:
+	serán masoquistas
+20:56:14 From Leandro Linardos to Everyone:
+	pero una serie básica de Netflix molesta por lo básica q es 🤔
+20:56:15 From Jaime Sossa to Everyone:
+	belleza sería que este sonriendo por que entiendes lo que lees y no tener ganas de hacerle algo malo a quien lo escribió.
+20:56:34 From Maximo Prieto to Everyone:
+	No me molesta lo básico
+20:56:48 From Maximo Prieto to Everyone:
+	Muchas veces me gusta
+20:57:11 From Maximiliano Contieri to Everyone:
+	Dtos
+20:57:15 From Maximiliano Contieri to Everyone:
+	Beans
+20:57:15 From Maximo Prieto to Everyone:
+	Me gusta tu espíritu, Jaime
+20:57:24 From Leandro Linardos to Everyone:
+	Entiendo, y que sería lo q no alcanza de la sería básica de Netflix? Q le falta?
+20:57:31 From Pablo Lucero to Everyone:
+	mas que pensar el codigo en terminos de belleza me parece mas util pensar que esta bien diseñado. Un buen diseño tiene que ser util antes que bello. Si es bello mejor, pero si es bello pero no es util/resuleve bien para lo que fue hecho, no va
+20:58:50 From Maximo Prieto to Everyone:
+	A ver, Leandro L., le falta detalle
+20:58:57 From Maximo Prieto to Everyone:
+	desarrollo
+20:59:07 From Maximo Prieto to Everyone:
+	Pero me sirve
+21:00:13 From Hernan Modrow to Everyone:
+	porque los FEs y BEs son enemigos naturales.. (?
+21:00:34 From Daniel Maldonado to Everyone:
+	Una lib aparte para dominio de negocio
+21:01:37 From Daniel Maldonado to Everyone:
+	“Asi estaba en el ejemplo de la docu” me han dicho
+21:01:47 From Leandro Linardos to Everyone:
+	“Asi anda”
+21:01:58 From Leandro Linardos to Everyone:
+	"(Hoy)"
+21:02:27 From Leonardo Giorcelli to Everyone:
+	Pasa q no siempre es fácil romper la costumbre o el paradigma mas usado, a veces no te imaginas que algo se puede hacer mejor, porque te falta conocimiento
+21:02:27 From Hernan Modrow to Everyone:
+	volvemos al inicio, nos faltan buenos ejemplos
+21:02:48 From Pep Diz to Everyone:
+	ahí no hay dilema, siempre inmutable! ;-)
+21:03:28 From Fabian Eduardo Diaz Lizcano to Everyone:
+	jajajajaja
+21:03:43 From Christian Contarino to Everyone:
+	Muy pocas veces casi nunca se usa
+21:04:01 From Maximiliano Contieri to Everyone:
+	Agunate el blockchain
+21:05:19 From Leandro Linardos to Everyone:
+	Yo creo que es una cuestión natural de aprender, si hoy sabes mas que ayer, seguramente mañana sepas más que hoy. En el momento que te “casaste” con que lo que tenes hoy es lo mejor (y te olvidaste que lo tenias antes tmb ERA lo mejor), dejaste de aprender.
+21:05:39 From Leandro Linardos to Everyone:
+	No nos gusta el cambio >_<
+21:06:01 From Maximiliano Contieri to Everyone:
+	Programacion funcional. Belleza
+21:08:45 From Pep Diz to Everyone:
+	pero hay diferentes formas de modelar la mutabilidad
+21:08:57 From Pep Diz to Everyone:
+	y puedes modelarlo con objetos inmutables
+21:09:33 From Eduardo Riesco to Everyone:
+	nunca me baño ene el mismo objeto
+21:09:38 From Fabian Eduardo Diaz Lizcano to Everyone:
+	jajajaajaja
+21:09:39 From Alexander Ezequiel Bálsamo to Everyone:
+	jajajaa
+21:09:49 From Pep Diz to Everyone:
+	es decir, que es también una cuestión técnica, no sólo de dominio de problema
+21:12:01 From Maximiliano Contieri to Everyone:
+	Y acoplado
+21:13:42 From Jeronimo Carrizo to Everyone:
+	Tal vez estaría bueno tener edificado el obj Inventariado. Y que el inventariado conoce el stock
+21:14:19 From Jeronimo Carrizo to Everyone:
+	Y un SuperMarket tiene una referencia a Inventariado.
+21:16:38 From Ezequiel Birman to Everyone:
+	Gracias Hernán por expresar lo que yo no hubiera podido
+21:17:37 From Maximiliano Contieri to Everyone:
+	Muy buenooooo
+21:17:44 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Grande Hernan, muchas gracias por compartir
+21:17:59 From Fabian Eduardo Diaz Lizcano to Everyone:
+	👏
+21:18:26 From Daniel Maldonado to Everyone:
+	Para el back postman / insomnia
+21:18:37 From Leandro Linardos to Everyone:
+	Una bofetada a lo Will Smith al “no hago tdd xq hago frontend”
+21:18:54 From Ricardo Mercado Visbal to Everyone:
+	genial el ejemplo !!!
+21:19:01 From Leandro Linardos to Everyone:
+	“No TESTEO xq hago frontend"
+21:19:04 From Maximiliano Contieri to Everyone:
+	Manden memes
+21:20:42 From Leandro Linardos to Everyone:
+	https://imgflip.com/i/6asdaf
+21:24:04 From Hernan Modrow to Everyone:
+	por qué se llama Carrito?
+21:24:13 From Daniel Maldonado to Everyone:
+	Changuito
+21:29:27 From Hernan Modrow to Everyone:
+	hermoso ejemplo
+21:29:35 From Lorenzo José Lamas to Everyone:
+	La verdad que si !
+21:32:47 From Diego De Cristofano to Everyone:
+	Se puede pasar el repo hoy?
+21:32:58 From Daniel Maldonado to Everyone:
+	Si, eso
+21:33:56 From Pep Diz to Everyone:
+	muy buena charla, lo disfruto mucho como ya viene siendo habitual, gracias a todos
+21:34:28 From Juan Carlos Humpiri to Everyone:
+	pueden pasar el canal slack?
+21:34:39 From Juan Carlos Humpiri to Everyone:
+	para poder charlar
+21:35:28 From Omar Huanca to Everyone:
+	Genial, gracias.!
+21:35:29 From Leandro Linardos to Everyone:
+	Muy bueno!
+21:35:31 From Leandro Linardos to Everyone:
+	gracias!
+21:35:38 From Fabian Eduardo Diaz Lizcano to Everyone:
+	Muchas gracias !!!!
+21:35:44 From Jeronimo Carrizo to Everyone:
+	Nuuu q no se corte!!!
+21:35:46 From Ricardo Mercado Visbal to Everyone:
+	Muchas gracias
+21:35:47 From Nicolas Castaño to Everyone:
+	muchas gracias!
